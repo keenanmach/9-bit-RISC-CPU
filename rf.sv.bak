@@ -4,9 +4,9 @@ module rf(
   input             clk,
   input  [7:0]      di,					// data to load into reg_file
   input             we,				    // write enable
-  input  [2:0]      ptr_w,				// address to write to
+  input  [1:0]      ptr_w,				// address to write to
                     ptr_a,				// 2 addresses to read from
-			           ptr_b,
+			        ptr_b,
   output logic[7:0] do_a,               // 2 data values to be read from reg_file
                     do_b,
   output logic signed[7:0] bamt

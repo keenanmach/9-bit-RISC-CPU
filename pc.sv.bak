@@ -15,7 +15,7 @@ module pc (
     if(reset)					 // resetting to start=0
 	  PC <= 'b0;
 	else if (brel)               // relative branching
-	  PC <= PC + bamt;
+	  PC <= PC + bamt
 	else						 // normal/default operation
 	  PC <= PC + 'b1;			 
 

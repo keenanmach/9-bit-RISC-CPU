@@ -17,15 +17,10 @@ module alu (
 	rslt  = 8'b0;
 	z     = 1'b0;
     case(op)						// selective override one or more defaults
-     kAND: rslt = in_a & in_b;		   
+      kAND: rslt = in_a & in_b;		   
 	  kADD: {co,rslt} = in_a+in_b+ci;  // add w/ carry in and out
 	  kXOR: rslt = in_a ^ in_b;
-	  kLSH: begin
-				if (rsh)
-					rslt = in_a >> in_b;
-				else
-					rslt = in_a << in_b;
-				end
+	  kLSH: rslt = ((in_a << in_b) & rsh) | (!rsh & (in_a >>in_b))
 	  kSTR: rslt = in_a;			// store in data_mem from reg_file
 	  kLDM: rslt = in_a;
 	  kLDI: rslt = in_b;

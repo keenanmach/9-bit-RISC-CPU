@@ -3,7 +3,7 @@ module dmem(
   input      clk,					// for writes only
              we,			        // write enable
   input[7:0] addr,					// address pointer for read or write
-  input[7:0] di,					// data value to be written	to data memory
+  input[7:0] di,					// data value to be written	to data memory (from ALU in_a)
   output logic[7:0] dout);			// data read out of memory
 
   logic[7:0] guts[256];				// the 2-D memory array itself
