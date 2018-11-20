@@ -40,11 +40,11 @@ for i in range(len(lines)):
 		machinecode.append(ops[instr[0]] + '_' + regs[instr[1]] + '_' + regs[instr[2]])
 		
 	elif instr[0] == 'lsl':
-		imm = '{0:02b}'.format(int(instr[2]))
+		imm = '{0:02b}'.format(int(instr[2])-1)
 		machinecode.append(ops[instr[0]] + "_" + "0" + "_" + regs[instr[1]] + "_" + imm)
 		
 	elif instr[0] == 'lsr':
-		imm = '{0:02b}'.format(int(instr[2]))
+		imm = '{0:02b}'.format(int(instr[2])-1)
 		machinecode.append(ops[instr[0]] + '_' + '1' + '_' + regs[instr[1]] + '_' + imm)
 		
 	elif instr[0] == 'ldi':
