@@ -13,7 +13,7 @@ module top(
   wire[7:0] dm_out,			    // data memory
             dm_in,			   
             dm_adr;
-  wire[7:0] in_a,			    // alu inputs
+  logic[7:0] in_a,			    // alu inputs
             in_b,			   
 			rslt,               // alu output
             do_a,	            // reg_file outputs

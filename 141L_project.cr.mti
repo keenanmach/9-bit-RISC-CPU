@@ -1,0 +1,114 @@
+C:/Users/oakhawaj/Desktop/CSE141LProject/CSE-141L/alu.sv {1 {vlog -work work -sv -stats=none C:/Users/oakhawaj/Desktop/CSE141LProject/CSE-141L/alu.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling package alu_sv_unit
+-- Importing package definitions
+-- Compiling module alu
+
+Top level modules:
+	alu
+
+} {} {}} C:/Users/oakhawaj/Desktop/CSE141LProject/CSE-141L/ls_dec.sv {1 {vlog -work work -sv -stats=none C:/Users/oakhawaj/Desktop/CSE141LProject/CSE-141L/ls_dec.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling package ls_dec_sv_unit
+-- Importing package definitions
+-- Compiling module ls_dec
+
+Top level modules:
+	ls_dec
+
+} {} {}} C:/Users/oakhawaj/Desktop/CSE141LProject/CSE-141L/top.sv {1 {vlog -work work -sv -stats=none C:/Users/oakhawaj/Desktop/CSE141LProject/CSE-141L/top.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling package top_sv_unit
+-- Importing package definitions
+-- Compiling module top
+
+Top level modules:
+	top
+
+} {} {}} C:/Users/oakhawaj/Desktop/CSE141LProject/CSE-141L/pc.sv {1 {vlog -work work -sv -stats=none C:/Users/oakhawaj/Desktop/CSE141LProject/CSE-141L/pc.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling package pc_sv_unit
+-- Importing package definitions
+-- Compiling module pc
+
+Top level modules:
+	pc
+
+} {} {}} C:/Users/oakhawaj/Desktop/CSE141LProject/CSE-141L/ctrl_dec_tb.sv {1 {vlog -work work -sv -stats=none C:/Users/oakhawaj/Desktop/CSE141LProject/CSE-141L/ctrl_dec_tb.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling package ctrl_dec_tb_sv_unit
+-- Importing package definitions
+-- Compiling module ctrl_dec_tb
+
+Top level modules:
+	ctrl_dec_tb
+
+} {} {}} C:/Users/oakhawaj/Desktop/CSE141LProject/CSE-141L/alu_tb.sv {1 {vlog -work work -sv -stats=none C:/Users/oakhawaj/Desktop/CSE141LProject/CSE-141L/alu_tb.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling package alu_tb_sv_unit
+-- Importing package definitions
+-- Compiling module alu_tb
+
+Top level modules:
+	alu_tb
+
+} {} {}} C:/Users/oakhawaj/Desktop/CSE141LProject/CSE-141L/lut_pc.sv {1 {vlog -work work -sv -stats=none C:/Users/oakhawaj/Desktop/CSE141LProject/CSE-141L/lut_pc.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module lut_pc
+
+Top level modules:
+	lut_pc
+
+} {} {}} C:/Users/oakhawaj/Desktop/CSE141LProject/CSE-141L/TopLevel_tb.sv {2 {vlog -work work -sv -stats=none C:/Users/oakhawaj/Desktop/CSE141LProject/CSE-141L/TopLevel_tb.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module TopLevel_tb
+** Warning: C:/Users/oakhawaj/Desktop/CSE141LProject/CSE-141L/TopLevel_tb.sv(50): (vlog-2643) Unterminated string literal continues onto next line.
+
+Top level modules:
+	TopLevel_tb
+
+} {} {}} C:/Users/oakhawaj/Desktop/CSE141LProject/CSE-141L/dmem.sv {1 {vlog -work work -sv -stats=none C:/Users/oakhawaj/Desktop/CSE141LProject/CSE-141L/dmem.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module dmem
+
+Top level modules:
+	dmem
+
+} {} {}} C:/Users/oakhawaj/Desktop/CSE141LProject/CSE-141L/definitions.sv {1 {vlog -work work -sv -stats=none C:/Users/oakhawaj/Desktop/CSE141LProject/CSE-141L/definitions.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling package definitions
+
+Top level modules:
+	--none--
+
+} {} {}} C:/Users/oakhawaj/Desktop/CSE141LProject/CSE-141L/test_bench.sv {1 {vlog -work work -sv -stats=none C:/Users/oakhawaj/Desktop/CSE141LProject/CSE-141L/test_bench.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module test_bench
+
+Top level modules:
+	test_bench
+
+} {} {}} C:/Users/oakhawaj/Desktop/CSE141LProject/CSE-141L/imem.sv {1 {vlog -work work -sv -stats=none C:/Users/oakhawaj/Desktop/CSE141LProject/CSE-141L/imem.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module imem
+
+Top level modules:
+	imem
+
+} {} {}} C:/Users/oakhawaj/Desktop/CSE141LProject/CSE-141L/rf.sv {1 {vlog -work work -sv -stats=none C:/Users/oakhawaj/Desktop/CSE141LProject/CSE-141L/rf.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module rf
+
+Top level modules:
+	rf
+
+} {} {}} C:/Users/oakhawaj/Desktop/CSE141LProject/CSE-141L/ctrl_dec.sv {1 {vlog -work work -sv -stats=none C:/Users/oakhawaj/Desktop/CSE141LProject/CSE-141L/ctrl_dec.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling package ctrl_dec_sv_unit
+-- Importing package definitions
+-- Compiling module ctrl_dec
+
+Top level modules:
+	ctrl_dec
+
+} {} {}}

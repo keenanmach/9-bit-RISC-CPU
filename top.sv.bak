@@ -21,7 +21,7 @@ module top(
   wire signed[7:0] br_out;      //branch register output
   wire[7:0] rf_din;	            // reg_file input
   wire[2:0] op;	                // opcode
-  wire[1:0] ptr_a,			    // ref_file pointers
+  wire[2:0] ptr_a,			    // ref_file pointers
             ptr_b,			   
 			ptr_w;
   wire      z;	                // alu zero flag
@@ -29,22 +29,23 @@ module top(
   wire      ldr,			    // load mode (mem --> reg_file)
             str;			    // store (reg_file --> mem)
   assign    op    = inst[8:6];
-  assign 	sh_d  = inst[5]
+  assign 	sh_d  = inst[5];
   assign    ptr_a = inst[5:3];
   assign    ptr_w = op==kLDI? 3'b001 : inst[5:3]; //Hardcode write register for LDI
   assign    ptr_b = inst[2:0];
   assign    dm_in = do_a;	    // rf ==> dm
   assign    in_a  = do_a; 		// rf ==> ALU
-  always_comb case (op)
-    default: rf_we = 1;
-    kBNE, kSTR: rf_we = 0;
-  endcase
+  
 // load: rf data input from mem; else: from ALU out 
   assign    rf_din = ldr? dm_out : rslt;
+  
 // select immediate or rf for second ALU input
-  assign    in_b  = op==kLSH? (instr[1:0]+1) : do_b;
-  assign    in_b  = op==kLDI? instr[5:0]: do_b; 
-  							   
+always_comb case (op)
+    default: in_b = do_b;
+    kLSH: in_b = inst[1:0]+1;
+	 kLDI: in_b = inst[5:0];
+endcase
+  
   pc pc1(						 // program counter
     .clk (clk) ,
 	.reset, 
@@ -59,11 +60,12 @@ module top(
 
   assign done = inst[6:4]==kSTR; // store result & hit done flag
 
-  ls_dec  dc1(				     // load and store decode
-    .op  ,
+  ctrl_dec  dc1(				     // "control" decode
+   .op  ,
 	.str ,					     // store turns on memory write enable
-	.ldr					     // load turns on reg_file write enable
-    );
+	.ldr,					     // load turns on reg_file write enable
+   .rf_we
+	);
 
   rf rf1(						 // reg file -- one write, two reads
     .clk             ,
@@ -78,9 +80,9 @@ module top(
   );
 
   alu au1(						 // execution (ALU) unit
-    .rsh(sh_d)					 // shift direction
+   .rsh(sh_d),					 // shift direction
 	.ci (1'b0),					 // not using carry-in in this program
-	.op ,						 // ALU operation
+	.op ,						    // ALU operation
 	.in_a ,						 // alu inputs
 	.in_b ,
 	.rslt ,						 // alu output
@@ -92,6 +94,7 @@ module top(
 	.we  (str)   ,				 // only time to write = store 
 	.addr(do_b),				 // from LUT
 	.di  (rslt) ,				 // data to store (from reg_file)
-	.dout(dm_out));				 // data out (for loads)
+	.dout(dm_out)            // data out (for loads)
+);				 
 
 endmodule

@@ -83,4 +83,5 @@ print(labels)
 mcfile = open(asmfile + '.mcode', 'w+')
 for line in machinecode:
 	print (line)
-	mcfile.write(line + '\n')
+	#mcfile.write(line + '\n')
+	mcfile.write(line.replace('_','') + '\n')
