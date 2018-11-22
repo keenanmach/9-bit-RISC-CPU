@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[174]:
+# In[68]:
 
 
 # max immediate loadable from ldi
@@ -12,6 +12,7 @@ REG_LENGTH = 3
 
 I_FSTR = '{}_{}'
 R_FSTR = '{}_{}_{}'
+MC_FSTR = "{}: instr = 'b{};\n"
 
 # ops dictionary
 ops = {
@@ -41,6 +42,17 @@ regs = {
     'res': '000'
 }
 
+reverse_regs = {
+    '000': 'r0',
+    '001': 'r1',
+    '010': 'r2',
+    '011': 'r3',
+    '100': 'r4',
+    '101': 'r5',
+    '110': 'r6',
+    '111': 'r7'
+}
+
 # bits left for immediates
 imm_bits = {
     'ldi': INSTR_LENGTH - len(ops['ldi']),
@@ -49,14 +61,14 @@ imm_bits = {
 }
 
 # labels
-labels = {}	
+labels = {}
 
 # instruction sets
 r_instr = {'and', 'add', 'xor', 'str', 'ldm', 'bne'}
 i_instr = {'ldi', 'lsl', 'lsr'}
 p_instr = {'addi', 'ldr', 'ldz', 'mov'}
 
-asmfile = 'fix2float.asm'
+asmfile = 'decrypter.asm'
 
 # immediate to decimal
 def imm_to_decimal(imm):
@@ -78,7 +90,7 @@ def convert_immediate(op, imm):
         ret = bin(int(imm))[2:]
         return ret.zfill(imm_bits[op])
     else:
-        return imm
+        return False
 
 # r type instruction to machine code
 def convert_r_instr(op, rs, rt):
@@ -125,17 +137,18 @@ def convert_p_instr(op, rest, label=False):
     elif op == 'mov':
         rs = rest[0]
         rt = rest[1]
-        return convert_p_str('ldz', rs) + [convert_r_instr('add', rs, rt)]
+        return convert_p_instr('ldz', [rs]) + [convert_r_instr('add', rs, rt)]
     
     elif op == 'ldr':
         reg = rest[0]
         imm = rest[1]
         if not label:
+            if not convert_immediate('ldi', imm):
+                return R_FSTR.format(ops['ldi'], regs[reg], imm)
             return convert_p_instr('ldz', [reg]) + convert_p_instr('addi', rest)
         else:
-            imm = bin(imm_to_decimal(imm))[2:].zfill(8)
-            print(imm)
-            return convert_p_instr('ldz', [reg]) + [convert_i_instr('ldi', str(imm >> 2))] + [convert_r_instr('add', reg, 'lr')] + [convert_i_instr('lsl', reg, '2')] + [convert_i_instr('ldi', str(imm & 3))] + [convert_r_instr('add'), 'lr', reg]
+            imm = imm_to_decimal(imm)
+            return convert_p_instr('ldz', [reg]) +                   [convert_i_instr('ldi', str(imm >> 2))] +                   [convert_r_instr('add', reg, 'lr')] +                   [convert_i_instr('lsl', reg, '2')] +                   [convert_i_instr('ldi', str(imm & 3))] +                   [convert_r_instr('add', 'lr', reg)]
 
 # instruction to machine code
 def convert_instr(instr):
@@ -146,20 +159,19 @@ def convert_instr(instr):
         return convert_i_instr(*instr)
     elif op in p_instr:
         return convert_p_instr(op, instr[1:])
-		
+
 def line_contains_label(line):
     for label in labels:
-	    if label[:len(label)-1] in line:
-		    return True
+        if label[:len(label)-1] in line:
+            return True
     return False
-	
+    
 def convert_load_label(line):
-	reg = regs[line.split('_')[1]]
-    label = line.split('_')[2]
+    reg = reverse_regs[line.split('_')[1]]
+    label = '_'.join(line.split('_')[2:])
     line_number = labels[label+':']
     return convert_p_instr('ldr', ['br', str(line_number)], label=True)
-	              
-	
+              
 # Convert pseudoinstructions
 with open(asmfile, 'r') as rf:
     lines = rf.readlines()
@@ -168,10 +180,14 @@ with open(asmfile, 'r') as rf:
 machinecode = []
 for i in range(len(lines)):
     line = lines[i]
-    instr = line.lower().strip().split(';')[0].strip().replace(',','').split()
+    
+    if line.startswith('/'):
+        continue
+        
+    instr = line.lower().strip().replace('//',';').split(';')[0].strip().replace(',','').split()
     
     if len(instr) == 0:
-	    pass
+        pass
     elif len(instr) == 1:
         machinecode.append(instr)
         #labels.add(instr[0])
@@ -187,30 +203,19 @@ for i in range(len(machinecode)):
     if isinstance(machinecode[i], list):
         labels[machinecode[i][0]] = None
 
-
-# In[175]:
-
-
-#for line in machinecode:
-    #print(line)
-
 final_machinecode = []
 
-mcfile = open(asmfile + '2'+ '.mcode', 'w+')
 for line in machinecode:
+    if line is None:
+        continue
     if isinstance(line, list):
         final_machinecode.append(line)
-    else:	
+    else:
         if line_contains_label(line):
-		    final_machinecode.extend([line] + ['nop']*6)
+            final_machinecode.extend([line] + ['nop']*6)
         else:
-		    final_machinecode.append(line)
-			
-			
-for line in final_machinecode:
-    #print(line)
-    pass
-	
+            final_machinecode.append(line)
+        
 # set label values
 non_label_instr_count = 0
 codes = {}
@@ -219,22 +224,22 @@ for i in range(len(final_machinecode)):
         labels[final_machinecode[i][0]] = non_label_instr_count
     else:
         codes[non_label_instr_count] = final_machinecode[i]
-        non_label_instr_count += 1
-		
-#print(labels)
-#for key, value in codes.items():
-#    print(str(key) + ',' + str(value))    
-	
+        non_label_instr_count += 1 
+
 final_machinecode = [x for x in final_machinecode if not isinstance(x, list)]
-for line in final_machinecode:
-    #print(line)
-	pass
 
-print(labels)
-print(convert_load_label('100_010_loop'))
+with open(asmfile+'.mcode', 'w') as wf:
+    for line in final_machinecode:
+        if line == 'nop':
+            pass
+        elif line_contains_label(line):
+            for instr in convert_load_label(line):
+                wf.write(instr+'\n')
+        else:
+            wf.write(line+'\n')
 
 
-# In[ ]:
+# In[58]:
 
 
 
