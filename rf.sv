@@ -18,6 +18,6 @@ module rf(
 
   always_comb do_a = core[ptr_a];		// reads are continuous/combinational instead of 
   always_comb do_b = core[ptr_b];       //   clocked/sequential
-  always_comb bamt = core[1]; 		    // br_out outputs value in r2 (lr)
+  always_comb bamt = core[1]; 		    // br_out outputs value in r1 (lr)
 
 endmodule

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for top
-Mon Dec 03 04:49:04 2018
+Mon Dec 03 12:14:59 2018
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -13,14 +13,12 @@ Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. Registers Removed During Synthesis
-  9. Removed Registers Triggering Further Register Optimizations
- 10. General Register Statistics
- 11. Multiplexer Restructuring Statistics (Restructuring Performed)
- 12. Port Connectivity Checks: "alu:au1"
- 13. Post-Synthesis Netlist Statistics for Top Partition
- 14. Elapsed Time Per Partition
- 15. Analysis & Synthesis Messages
+  8. General Register Statistics
+  9. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 10. Port Connectivity Checks: "alu:au1"
+ 11. Post-Synthesis Netlist Statistics for Top Partition
+ 12. Elapsed Time Per Partition
+ 13. Analysis & Synthesis Messages
 
 
 
@@ -46,16 +44,16 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +-----------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status       ; Successful - Mon Dec 03 04:49:04 2018       ;
+; Analysis & Synthesis Status       ; Successful - Mon Dec 03 12:14:59 2018       ;
 ; Quartus Prime Version             ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                     ; top                                         ;
 ; Top-level Entity Name             ; top                                         ;
 ; Family                            ; Arria II GX                                 ;
 ; Logic utilization                 ; N/A                                         ;
-;     Combinational ALUTs           ; 1,175                                       ;
+;     Combinational ALUTs           ; 1,238                                       ;
 ;     Memory ALUTs                  ; 0                                           ;
-;     Dedicated logic registers     ; 2,088                                       ;
-; Total registers                   ; 2088                                        ;
+;     Dedicated logic registers     ; 2,120                                       ;
+; Total registers                   ; 2120                                        ;
 ; Total pins                        ; 3                                           ;
 ; Total virtual pins                ; 0                                           ;
 ; Total block memory bits           ; 0                                           ;
@@ -197,34 +195,34 @@ refer to the applicable agreement for further details.
 +-----------------------------------------------+-----------+
 ; Resource                                      ; Usage     ;
 +-----------------------------------------------+-----------+
-; Estimated ALUTs Used                          ; 1175      ;
-;     -- Combinational ALUTs                    ; 1175      ;
+; Estimated ALUTs Used                          ; 1238      ;
+;     -- Combinational ALUTs                    ; 1238      ;
 ;     -- Memory ALUTs                           ; 0         ;
 ;     -- LUT_REGs                               ; 0         ;
-; Dedicated logic registers                     ; 2088      ;
+; Dedicated logic registers                     ; 2120      ;
 ;                                               ;           ;
-; Estimated ALUTs Unavailable                   ; 0         ;
-;     -- Due to unpartnered combinational logic ; 0         ;
+; Estimated ALUTs Unavailable                   ; 3         ;
+;     -- Due to unpartnered combinational logic ; 3         ;
 ;     -- Due to Memory ALUTs                    ; 0         ;
 ;                                               ;           ;
-; Total combinational functions                 ; 1175      ;
+; Total combinational functions                 ; 1238      ;
 ; Combinational ALUT usage by number of inputs  ;           ;
-;     -- 7 input functions                      ; 0         ;
-;     -- 6 input functions                      ; 781       ;
-;     -- 5 input functions                      ; 37        ;
-;     -- 4 input functions                      ; 64        ;
-;     -- <=3 input functions                    ; 293       ;
+;     -- 7 input functions                      ; 3         ;
+;     -- 6 input functions                      ; 837       ;
+;     -- 5 input functions                      ; 60        ;
+;     -- 4 input functions                      ; 24        ;
+;     -- <=3 input functions                    ; 314       ;
 ;                                               ;           ;
 ; Combinational ALUTs by mode                   ;           ;
-;     -- normal mode                            ; 1150      ;
-;     -- extended LUT mode                      ; 0         ;
-;     -- arithmetic mode                        ; 25        ;
+;     -- normal mode                            ; 1218      ;
+;     -- extended LUT mode                      ; 3         ;
+;     -- arithmetic mode                        ; 17        ;
 ;     -- shared arithmetic mode                 ; 0         ;
 ;                                               ;           ;
-; Estimated ALUT/register pairs used            ; 3011      ;
+; Estimated ALUT/register pairs used            ; 3111      ;
 ;                                               ;           ;
-; Total registers                               ; 2088      ;
-;     -- Dedicated logic registers              ; 2088      ;
+; Total registers                               ; 2120      ;
+;     -- Dedicated logic registers              ; 2120      ;
 ;     -- I/O registers                          ; 0         ;
 ;     -- LUT_REGs                               ; 0         ;
 ;                                               ;           ;
@@ -234,9 +232,9 @@ refer to the applicable agreement for further details.
 ; DSP block 18-bit elements                     ; 0         ;
 ;                                               ;           ;
 ; Maximum fan-out node                          ; clk~input ;
-; Maximum fan-out                               ; 2088      ;
-; Total fan-out                                 ; 12028     ;
-; Average fan-out                               ; 3.68      ;
+; Maximum fan-out                               ; 2120      ;
+; Total fan-out                                 ; 12494     ;
+; Average fan-out                               ; 3.71      ;
 +-----------------------------------------------+-----------+
 
 
@@ -245,71 +243,15 @@ refer to the applicable agreement for further details.
 +----------------------------+---------------------+---------------------------+-------------------+--------------+---------+-----------+-----------+-----------+------+--------------+---------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 12x12 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------------+--------------+---------+-----------+-----------+-----------+------+--------------+---------------------+-------------+--------------+
-; |top                       ; 1175 (24)           ; 2088 (0)                  ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 3    ; 0            ; |top                ; top         ; work         ;
-;    |alu:au1|               ; 90 (90)             ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |top|alu:au1        ; alu         ; work         ;
+; |top                       ; 1238 (28)           ; 2120 (0)                  ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 3    ; 0            ; |top                ; top         ; work         ;
+;    |alu:au1|               ; 85 (85)             ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |top|alu:au1        ; alu         ; work         ;
+;    |ctrl_dec:dc1|          ; 3 (3)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |top|ctrl_dec:dc1   ; ctrl_dec    ; work         ;
 ;    |dmem:dm1|              ; 1004 (1004)         ; 2048 (2048)               ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |top|dmem:dm1       ; dmem        ; work         ;
-;    |imem:im1|              ; 12 (12)             ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |top|imem:im1       ; imem        ; work         ;
-;    |pc:pc1|                ; 8 (8)               ; 8 (8)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |top|pc:pc1         ; pc          ; work         ;
-;    |rf:rf1|                ; 37 (37)             ; 32 (32)                   ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |top|rf:rf1         ; rf          ; work         ;
+;    |imem:im1|              ; 22 (22)             ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |top|imem:im1       ; imem        ; work         ;
+;    |pc:pc1|                ; 12 (12)             ; 8 (8)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |top|pc:pc1         ; pc          ; work         ;
+;    |rf:rf1|                ; 84 (84)             ; 64 (64)                   ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |top|rf:rf1         ; rf          ; work         ;
 +----------------------------+---------------------+---------------------------+-------------------+--------------+---------+-----------+-----------+-----------+------+--------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+--------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                   ;
-+----------------------------------------+---------------------------------------------+
-; Register name                          ; Reason for Removal                          ;
-+----------------------------------------+---------------------------------------------+
-; rf:rf1|core[0][3]                      ; Stuck at GND due to stuck port clock_enable ;
-; rf:rf1|core[6][3]                      ; Stuck at GND due to stuck port clock_enable ;
-; rf:rf1|core[4][3]                      ; Stuck at GND due to stuck port clock_enable ;
-; rf:rf1|core[2][3]                      ; Stuck at GND due to stuck port clock_enable ;
-; rf:rf1|core[4][2]                      ; Stuck at GND due to stuck port clock_enable ;
-; rf:rf1|core[6][2]                      ; Stuck at GND due to stuck port clock_enable ;
-; rf:rf1|core[0][2]                      ; Stuck at GND due to stuck port clock_enable ;
-; rf:rf1|core[2][2]                      ; Stuck at GND due to stuck port clock_enable ;
-; rf:rf1|core[4][1]                      ; Stuck at GND due to stuck port clock_enable ;
-; rf:rf1|core[6][1]                      ; Stuck at GND due to stuck port clock_enable ;
-; rf:rf1|core[0][1]                      ; Stuck at GND due to stuck port clock_enable ;
-; rf:rf1|core[2][1]                      ; Stuck at GND due to stuck port clock_enable ;
-; rf:rf1|core[4][0]                      ; Stuck at GND due to stuck port clock_enable ;
-; rf:rf1|core[6][0]                      ; Stuck at GND due to stuck port clock_enable ;
-; rf:rf1|core[0][0]                      ; Stuck at GND due to stuck port clock_enable ;
-; rf:rf1|core[2][0]                      ; Stuck at GND due to stuck port clock_enable ;
-; rf:rf1|core[4][4]                      ; Stuck at GND due to stuck port clock_enable ;
-; rf:rf1|core[6][4]                      ; Stuck at GND due to stuck port clock_enable ;
-; rf:rf1|core[2][4]                      ; Stuck at GND due to stuck port clock_enable ;
-; rf:rf1|core[0][4]                      ; Stuck at GND due to stuck port clock_enable ;
-; rf:rf1|core[0][5]                      ; Stuck at GND due to stuck port clock_enable ;
-; rf:rf1|core[6][5]                      ; Stuck at GND due to stuck port clock_enable ;
-; rf:rf1|core[4][5]                      ; Stuck at GND due to stuck port clock_enable ;
-; rf:rf1|core[2][5]                      ; Stuck at GND due to stuck port clock_enable ;
-; rf:rf1|core[4][6]                      ; Stuck at GND due to stuck port clock_enable ;
-; rf:rf1|core[6][6]                      ; Stuck at GND due to stuck port clock_enable ;
-; rf:rf1|core[2][6]                      ; Stuck at GND due to stuck port clock_enable ;
-; rf:rf1|core[0][6]                      ; Stuck at GND due to stuck port clock_enable ;
-; rf:rf1|core[0][7]                      ; Stuck at GND due to stuck port clock_enable ;
-; rf:rf1|core[6][7]                      ; Stuck at GND due to stuck port clock_enable ;
-; rf:rf1|core[4][7]                      ; Stuck at GND due to stuck port clock_enable ;
-; rf:rf1|core[2][7]                      ; Stuck at GND due to stuck port clock_enable ;
-; Total Number of Removed Registers = 32 ;                                             ;
-+----------------------------------------+---------------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                                                      ;
-+-------------------+--------------------------------+-----------------------------------------------------------------------------+
-; Register name     ; Reason for Removal             ; Registers Removed due to This Register                                      ;
-+-------------------+--------------------------------+-----------------------------------------------------------------------------+
-; rf:rf1|core[6][2] ; Stuck at GND                   ; rf:rf1|core[4][1], rf:rf1|core[2][1], rf:rf1|core[4][0], rf:rf1|core[6][0], ;
-;                   ; due to stuck port clock_enable ; rf:rf1|core[0][0], rf:rf1|core[2][0], rf:rf1|core[4][4], rf:rf1|core[6][4], ;
-;                   ;                                ; rf:rf1|core[2][4], rf:rf1|core[0][4], rf:rf1|core[0][5], rf:rf1|core[6][5], ;
-;                   ;                                ; rf:rf1|core[4][5], rf:rf1|core[2][5], rf:rf1|core[4][6], rf:rf1|core[6][6], ;
-;                   ;                                ; rf:rf1|core[2][6], rf:rf1|core[0][6], rf:rf1|core[0][7], rf:rf1|core[6][7], ;
-;                   ;                                ; rf:rf1|core[4][7], rf:rf1|core[2][7]                                        ;
-; rf:rf1|core[2][2] ; Stuck at GND                   ; rf:rf1|core[6][1], rf:rf1|core[0][1]                                        ;
-;                   ; due to stuck port clock_enable ;                                                                             ;
-+-------------------+--------------------------------+-----------------------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -317,12 +259,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 2088  ;
+; Total registers                              ; 2120  ;
 ; Number of registers using Synchronous Clear  ; 8     ;
-; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Synchronous Load   ; 8     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 2080  ;
+; Number of registers using Clock Enable       ; 2112  ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -332,15 +274,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; 4:1                ; 8 bits    ; 16 ALUTs      ; 16 ALUTs             ; 0 ALUTs                ; No         ; |top|rf:rf1|Mux12          ;
+; 3:1                ; 8 bits    ; 16 ALUTs      ; 0 ALUTs              ; 16 ALUTs               ; Yes        ; |top|pc:pc1|PC[7]          ;
 ; 3:1                ; 3 bits    ; 6 ALUTs       ; 6 ALUTs              ; 0 ALUTs                ; No         ; |top|ptr_w[0]              ;
 ; 4:1                ; 2 bits    ; 4 ALUTs       ; 4 ALUTs              ; 0 ALUTs                ; No         ; |top|alu:au1|ShiftLeft0    ;
+; 4:1                ; 2 bits    ; 4 ALUTs       ; 4 ALUTs              ; 0 ALUTs                ; No         ; |top|alu:au1|ShiftRight0   ;
 ; 4:1                ; 2 bits    ; 4 ALUTs       ; 4 ALUTs              ; 0 ALUTs                ; No         ; |top|alu:au1|ShiftLeft0    ;
-; 4:1                ; 2 bits    ; 4 ALUTs       ; 4 ALUTs              ; 0 ALUTs                ; No         ; |top|alu:au1|ShiftLeft0    ;
-; 8:1                ; 8 bits    ; 40 ALUTs      ; 40 ALUTs             ; 0 ALUTs                ; No         ; |top|rf:rf1|Mux2           ;
-; 3:1                ; 3 bits    ; 6 ALUTs       ; 6 ALUTs              ; 0 ALUTs                ; No         ; |top|Selector3             ;
-; 16:1               ; 4 bits    ; 40 ALUTs      ; 32 ALUTs             ; 8 ALUTs                ; No         ; |top|alu:au1|Mux2          ;
-; 16:1               ; 3 bits    ; 30 ALUTs      ; 24 ALUTs             ; 6 ALUTs                ; No         ; |top|alu:au1|Mux4          ;
+; 8:1                ; 8 bits    ; 40 ALUTs      ; 40 ALUTs             ; 0 ALUTs                ; No         ; |top|rf:rf1|Mux8           ;
+; 8:1                ; 8 bits    ; 40 ALUTs      ; 40 ALUTs             ; 0 ALUTs                ; No         ; |top|rf:rf1|Mux5           ;
+; 3:1                ; 3 bits    ; 6 ALUTs       ; 6 ALUTs              ; 0 ALUTs                ; No         ; |top|Selector5             ;
+; 16:1               ; 4 bits    ; 40 ALUTs      ; 32 ALUTs             ; 8 ALUTs                ; No         ; |top|alu:au1|Mux7          ;
+; 16:1               ; 4 bits    ; 40 ALUTs      ; 32 ALUTs             ; 8 ALUTs                ; No         ; |top|alu:au1|Mux0          ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 
 
@@ -359,25 +302,26 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriaii_ff            ; 2088                        ;
-;     ENA               ; 2080                        ;
-;     SCLR              ; 8                           ;
+; arriaii_ff            ; 2120                        ;
+;     ENA               ; 2112                        ;
+;     SCLR SLD          ; 8                           ;
 ; boundary_port         ; 3                           ;
-; stratixiv_lcell_comb  ; 1175                        ;
-;     arith             ; 25                          ;
-;         0 data inputs ; 1                           ;
-;         3 data inputs ; 3                           ;
-;         4 data inputs ; 8                           ;
-;         5 data inputs ; 13                          ;
-;     normal            ; 1150                        ;
-;         2 data inputs ; 265                         ;
-;         3 data inputs ; 24                          ;
-;         4 data inputs ; 56                          ;
-;         5 data inputs ; 24                          ;
-;         6 data inputs ; 781                         ;
+; stratixiv_lcell_comb  ; 1238                        ;
+;     arith             ; 17                          ;
+;         1 data inputs ; 8                           ;
+;         4 data inputs ; 1                           ;
+;         5 data inputs ; 8                           ;
+;     extend            ; 3                           ;
+;         7 data inputs ; 3                           ;
+;     normal            ; 1218                        ;
+;         2 data inputs ; 266                         ;
+;         3 data inputs ; 40                          ;
+;         4 data inputs ; 23                          ;
+;         5 data inputs ; 52                          ;
+;         6 data inputs ; 837                         ;
 ;                       ;                             ;
-; Max LUT depth         ; 8.90                        ;
-; Average LUT depth     ; 5.80                        ;
+; Max LUT depth         ; 9.70                        ;
+; Average LUT depth     ; 5.89                        ;
 +-----------------------+-----------------------------+
 
 
@@ -386,7 +330,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:02     ;
 +----------------+--------------+
 
 
@@ -396,7 +340,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Mon Dec 03 04:48:55 2018
+    Info: Processing started: Mon Dec 03 12:14:49 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off top -c top
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
@@ -429,31 +373,30 @@ Info (12021): Found 1 design units, including 1 entities, in source file alu_tb.
 Info (12021): Found 1 design units, including 1 entities, in source file ctrl_dec_tb.sv
     Info (12023): Found entity 1: ctrl_dec_tb File: C:/Users/Omar/Documents/CSE 141L project/ctrl_dec_tb.sv Line: 2
 Warning (10236): Verilog HDL Implicit Net warning at top.sv(32): created implicit net for "sh_d" File: C:/Users/Omar/Documents/CSE 141L project/top.sv Line: 32
-Warning (10236): Verilog HDL Implicit Net warning at pc.sv(12): created implicit net for "brel" File: C:/Users/Omar/Documents/CSE 141L project/pc.sv Line: 12
 Info (12127): Elaborating entity "top" for the top level hierarchy
 Warning (10036): Verilog HDL or VHDL warning at top.sv(14): object "dm_in" assigned a value but never read File: C:/Users/Omar/Documents/CSE 141L project/top.sv Line: 14
 Warning (10230): Verilog HDL assignment warning at top.sv(47): truncated value with size 32 to match size of target (8) File: C:/Users/Omar/Documents/CSE 141L project/top.sv Line: 47
-Info (12128): Elaborating entity "pc" for hierarchy "pc:pc1" File: C:/Users/Omar/Documents/CSE 141L project/top.sv Line: 60
-Warning (10230): Verilog HDL assignment warning at pc.sv(20): truncated value with size 32 to match size of target (8) File: C:/Users/Omar/Documents/CSE 141L project/pc.sv Line: 20
-Info (12128): Elaborating entity "imem" for hierarchy "imem:im1" File: C:/Users/Omar/Documents/CSE 141L project/top.sv Line: 64
-Info (12128): Elaborating entity "ctrl_dec" for hierarchy "ctrl_dec:dc1" File: C:/Users/Omar/Documents/CSE 141L project/top.sv Line: 73
-Info (12128): Elaborating entity "rf" for hierarchy "rf:rf1" File: C:/Users/Omar/Documents/CSE 141L project/top.sv Line: 85
-Info (12128): Elaborating entity "alu" for hierarchy "alu:au1" File: C:/Users/Omar/Documents/CSE 141L project/top.sv Line: 95
-Warning (10036): Verilog HDL or VHDL warning at alu.sv(13): object "op_mnemonic" assigned a value but never read File: C:/Users/Omar/Documents/CSE 141L project/alu.sv Line: 13
-Info (12128): Elaborating entity "dmem" for hierarchy "dmem:dm1" File: C:/Users/Omar/Documents/CSE 141L project/top.sv Line: 103
+Info (12128): Elaborating entity "pc" for hierarchy "pc:pc1" File: C:/Users/Omar/Documents/CSE 141L project/top.sv Line: 61
+Warning (10230): Verilog HDL assignment warning at pc.sv(21): truncated value with size 32 to match size of target (8) File: C:/Users/Omar/Documents/CSE 141L project/pc.sv Line: 21
+Info (12128): Elaborating entity "imem" for hierarchy "imem:im1" File: C:/Users/Omar/Documents/CSE 141L project/top.sv Line: 65
+Info (12128): Elaborating entity "ctrl_dec" for hierarchy "ctrl_dec:dc1" File: C:/Users/Omar/Documents/CSE 141L project/top.sv Line: 74
+Info (12128): Elaborating entity "rf" for hierarchy "rf:rf1" File: C:/Users/Omar/Documents/CSE 141L project/top.sv Line: 86
+Info (12128): Elaborating entity "alu" for hierarchy "alu:au1" File: C:/Users/Omar/Documents/CSE 141L project/top.sv Line: 97
+Warning (10036): Verilog HDL or VHDL warning at alu.sv(14): object "op_mnemonic" assigned a value but never read File: C:/Users/Omar/Documents/CSE 141L project/alu.sv Line: 14
+Info (12128): Elaborating entity "dmem" for hierarchy "dmem:dm1" File: C:/Users/Omar/Documents/CSE 141L project/top.sv Line: 105
 Info (276014): Found 1 instances of uninferred RAM logic
     Info (276007): RAM logic "dmem:dm1|guts" is uninferred due to asynchronous read logic File: C:/Users/Omar/Documents/CSE 141L project/dmem.sv Line: 9
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 3258 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 3353 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
     Info (21059): Implemented 1 output pins
-    Info (21061): Implemented 3255 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 7 warnings
-    Info: Peak virtual memory: 4886 megabytes
-    Info: Processing ended: Mon Dec 03 04:49:04 2018
-    Info: Elapsed time: 00:00:09
+    Info (21061): Implemented 3350 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 6 warnings
+    Info: Peak virtual memory: 4889 megabytes
+    Info: Processing ended: Mon Dec 03 12:14:59 2018
+    Info: Elapsed time: 00:00:10
     Info: Total CPU time (on all processors): 00:00:18
 
 

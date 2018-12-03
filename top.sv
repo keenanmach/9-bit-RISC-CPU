@@ -57,6 +57,7 @@ endcase
 	.op   ,					     // from inst_mem
 	.bamt (bamt) ,		         // from reg file
 	.z    ,					     // zero flag from ALU
+	.rslt (rslt),
 	.PC );					     // to PC module
 
   imem im1(					     // instruction memory
@@ -90,6 +91,7 @@ endcase
 	.op ,						    // ALU operation
 	.in_a ,						 // alu inputs
 	.in_b ,
+	.clk (clk),
 	.rslt ,						 // alu output
 	.co (),						 // carry out -- not connected, not used
 	.z  );						 // zero flag   in_a=0
