@@ -21,7 +21,7 @@ module top(
   wire signed[7:0] br_out;      //branch register output
   wire[7:0] rf_din;	            // reg_file input
   wire[2:0] op;	                // opcode
-  wire[2:0] ptr_a,			    // ref_file pointers
+  logic[2:0] ptr_a,			    // ref_file pointers
             ptr_b,			   
 			ptr_w;
   wire      z;	                // alu zero flag
@@ -30,8 +30,8 @@ module top(
             str;			    // store (reg_file --> mem)
   assign    op    = inst[8:6];
   assign 	sh_d  = inst[5];
-  assign    ptr_a = inst[5:3];
-  assign    ptr_w = op==kLDI? 3'b001 : inst[5:3]; //Hardcode write register for LDI
+  assign 	ptr_w = op==kLSH ? inst[4:2] : (op==kLDI ? 3'b001 :inst[5:3]);
+  assign 	ptr_a = op==kLSH ? inst[4:2] : inst[5:3];
   assign    ptr_b = inst[2:0];
   assign    dm_in = do_a;	    // rf ==> dm
   assign    in_a  = do_a; 		// rf ==> ALU
@@ -41,10 +41,15 @@ module top(
   
 // select immediate or rf for second ALU input
 always_comb case (op)
-    default: in_b = do_b;
-    kLSH: in_b = inst[1:0]+1;
-	 kLDI: in_b = inst[5:0];
+    default: 
+				in_b = do_b;
+    kLSH: 
+				in_b = inst[1:0]+1;						
+	 kLDI: 
+				in_b = inst[5:0];
 endcase
+
+	
   
   pc pc1(						 // program counter
     .clk (clk) ,
@@ -58,7 +63,7 @@ endcase
      .PC   ,				     // pointer in = PC
 	 .inst);				     // output = 7-bit (yours is 9) machine code
 
-  assign done = inst[6:4]==kSTR; // store result & hit done flag
+  assign done = inst == 'b111111111; // store result & hit done flag
 
   ctrl_dec  dc1(				     // "control" decode
    .op  ,
@@ -71,9 +76,9 @@ endcase
     .clk             ,
 	.di   (rf_din)   ,			 // data to be written in
 	.we   (rf_we)      ,		 // write enable
-	.ptr_w(inst[3:2])   ,		 // write pointer = one of the read ptrs
-	.ptr_a(inst[3:2])   ,		 // read pointers 
-	.ptr_b(inst[1:0])   ,
+	.ptr_w(ptr_w)   ,		 // write pointer = one of the read ptrs
+	.ptr_a(ptr_a)   ,		 // read pointers 
+	.ptr_b(ptr_b)   ,
 	.do_a               ,        // to ALU
 	.do_b  				,
 	.bamt							// to ALU immediate input switch
