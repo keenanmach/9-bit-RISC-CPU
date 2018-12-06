@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[68]:
+# In[14]:
 
 
 # max immediate loadable from ldi
@@ -170,7 +170,7 @@ def convert_load_label(line):
     reg = reverse_regs[line.split('_')[1]]
     label = '_'.join(line.split('_')[2:])
     line_number = labels[label+':']
-    return convert_p_instr('ldr', ['br', str(line_number)], label=True)
+    return convert_p_instr('ldr', [reg, str(line_number)], label=True)
               
 # Convert pseudoinstructions
 with open(asmfile, 'r') as rf:
@@ -237,16 +237,4 @@ with open(asmfile+'.mcode', 'w') as wf:
                 wf.write(instr+'\n')
         else:
             wf.write(line+'\n')
-
-
-# In[58]:
-
-
-
-
-
-# In[ ]:
-
-
-
 
