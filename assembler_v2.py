@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[14]:
+# In[32]:
 
 
 # max immediate loadable from ldi
@@ -181,60 +181,89 @@ machinecode = []
 for i in range(len(lines)):
     line = lines[i]
     
-    if line.startswith('/'):
+    if line.strip().startswith('/'):
+        machinecode.append((None, line.strip()))
         continue
-        
-    instr = line.lower().strip().replace('//',';').split(';')[0].strip().replace(',','').split()
+    
+    split_line = line.strip().replace('//', ';').split(';')
+    instr = split_line[0].lower().strip().replace(',','').split()
+    if len(split_line) > 1:
+        comment = ' //' + split_line[1]
+    else:
+        comment = None
     
     if len(instr) == 0:
         pass
     elif len(instr) == 1:
-        machinecode.append(instr)
-        #labels.add(instr[0])
+        machinecode.append((instr, comment))
     else:
         converted_instruction = convert_instr(instr)
         if isinstance(converted_instruction, list):
-            machinecode.extend(converted_instruction)
+            machinecode.append((converted_instruction[0], comment))
+            for conv_instr in converted_instruction[1:]:
+                machinecode.append((conv_instr, None))
         else:
-            machinecode.append(converted_instruction)
+            machinecode.append((converted_instruction, comment))
             
 # get branch labels
 for i in range(len(machinecode)):
-    if isinstance(machinecode[i], list):
-        labels[machinecode[i][0]] = None
+    if isinstance(machinecode[i][0], list):
+        labels[machinecode[i][0][0]] = None
 
 final_machinecode = []
+final_comments = []
 
-for line in machinecode:
+for line, comment in machinecode:
     if line is None:
-        continue
-    if isinstance(line, list):
-        final_machinecode.append(line)
+        if comment is None:
+            continue
+        else:
+            final_machinecode.append((line, comment))
+    elif isinstance(line, list):
+        final_machinecode.append((line, comment))
     else:
         if line_contains_label(line):
-            final_machinecode.extend([line] + ['nop']*6)
+            final_machinecode.extend([(line, comment)] + [('nop', None)]*6)
         else:
-            final_machinecode.append(line)
+            final_machinecode.append((line, comment))
         
 # set label values
 non_label_instr_count = 0
 codes = {}
 for i in range(len(final_machinecode)):
-    if isinstance(final_machinecode[i], list):
-        labels[final_machinecode[i][0]] = non_label_instr_count
+    if final_machinecode[i][0] is None:
+        pass
+    if isinstance(final_machinecode[i][0], list):
+        labels[final_machinecode[i][0][0]] = non_label_instr_count
     else:
-        codes[non_label_instr_count] = final_machinecode[i]
+        codes[non_label_instr_count] = final_machinecode[i][0]
         non_label_instr_count += 1 
 
-final_machinecode = [x for x in final_machinecode if not isinstance(x, list)]
+final_machinecode = [x for x in final_machinecode if not isinstance(x[0], list)]
 
 with open(asmfile+'.mcode', 'w') as wf:
-    for line in final_machinecode:
+    for line, comment in final_machinecode:
         if line == 'nop':
             pass
+        elif line is None and comment is not None:
+            wf.write(comment+'\n')
         elif line_contains_label(line):
-            for instr in convert_load_label(line):
+            load_label_instrs = convert_load_label(line)
+            wf.write(load_label_instrs[0])
+            if comment is not None:
+                wf.write(comment)
+            wf.write('\n')
+            for instr in load_label_instrs[1:]:
                 wf.write(instr+'\n')
         else:
-            wf.write(line+'\n')
+            wf.write(line)
+            if comment is not None:
+                wf.write(comment)
+            wf.write('\n')
+
+
+# In[ ]:
+
+
+
 
