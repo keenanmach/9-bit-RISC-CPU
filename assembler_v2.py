@@ -68,7 +68,7 @@ r_instr = {'and', 'add', 'xor', 'str', 'ldm', 'bne'}
 i_instr = {'ldi', 'lsl', 'lsr'}
 p_instr = {'addi', 'ldr', 'ldz', 'mov'}
 
-asmfile = 'decrypter.asm'
+asmfile = 'fix2float_v2.asm'
 
 # immediate to decimal
 def imm_to_decimal(imm):
@@ -242,6 +242,7 @@ for i in range(len(final_machinecode)):
 final_machinecode = [x for x in final_machinecode if not isinstance(x[0], list)]
 
 with open(asmfile+'.mcode', 'w') as wf:
+    i=0
     for line, comment in final_machinecode:
         if line == 'nop':
             pass
@@ -249,17 +250,21 @@ with open(asmfile+'.mcode', 'w') as wf:
             wf.write(comment+'\n')
         elif line_contains_label(line):
             load_label_instrs = convert_load_label(line)
-            wf.write(load_label_instrs[0])
+            wf.write(str(i) + ': instr = 9\'b'+ load_label_instrs[0] + ';')
+            i+=1
             if comment is not None:
                 wf.write(comment)
             wf.write('\n')
             for instr in load_label_instrs[1:]:
-                wf.write(instr+'\n')
+                wf.write(str(i) + ': instr = 9\'b'+ instr+';\n')
+                i+=1
+
         else:
-            wf.write(line)
+            wf.write(str(i) + ': instr = 9\'b'+ line+ ';')
             if comment is not None:
                 wf.write(comment)
             wf.write('\n')
+            i+=1
 
 
 # In[ ]:
