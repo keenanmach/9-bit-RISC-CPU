@@ -188,9 +188,9 @@ for i in range(len(lines)):
     split_line = line.strip().replace('//', ';').split(';')
     instr = split_line[0].lower().strip().replace(',','').split()
     if len(split_line) > 1:
-        comment = ' //' + split_line[1]
+        comment = ' //' + split_line[0] + split_line[1]
     else:
-        comment = None
+        comment = ' //' + split_line[0]
     
     if len(instr) == 0:
         pass
