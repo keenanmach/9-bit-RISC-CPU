@@ -28,6 +28,7 @@ module top(
   logic     rf_we;              // reg_file write enable
   wire      ldr,			    // load mode (mem --> reg_file)
             str;			    // store (reg_file --> mem)
+	bit shd_d;
   assign    op    = inst[8:6];
   assign 	sh_d  = inst[5];
   assign 	ptr_w = op==kLSH ? inst[4:2] : (op==kLDI ? 3'b001 :inst[5:3]);
@@ -96,12 +97,13 @@ endcase
 	.co (),						 // carry out -- not connected, not used
 	.z  );						 // zero flag   in_a=0
 
-  dmem dm1(						 // data memory
-    .clk         ,
-	.we  (str)   ,				 // only time to write = store 
-	.addr(do_b),				 // from LUT
-	.di  (rslt) ,				 // data to store (from reg_file)
-	.dout(dm_out)            // data out (for loads)
+  data_mem data_mem1 (						 // data memory
+   .CLK (clk),
+	.DataAddress(do_b),
+	.ReadMem  (1'b1),
+	.WriteMem(str),				// only time to write = store 
+	.DataIn (rslt),				 // data to store (from reg_file)
+	.DataOut(dm_out)            // data out (for loads)
 );				 
 
 endmodule

@@ -31,8 +31,8 @@ module int2flt_tb();
   end
 
   initial begin
-    //int_in = 16'd0;          
-   // disp2(int_in);
+    int_in = 16'd0;          
+    disp2(int_in);
     int_in = 16'd1;          // minimum nonzero positive
     disp2(int_in);
     int_in = 16'd2;          // 

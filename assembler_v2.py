@@ -68,7 +68,7 @@ r_instr = {'and', 'add', 'xor', 'str', 'ldm', 'bne'}
 i_instr = {'ldi', 'lsl', 'lsr'}
 p_instr = {'addi', 'ldr', 'ldz', 'mov'}
 
-asmfile = 'fix2float_v2.asm'
+asmfile = 'fix2float.asm'
 
 # immediate to decimal
 def imm_to_decimal(imm):
@@ -250,17 +250,17 @@ with open(asmfile+'.mcode', 'w') as wf:
             wf.write(comment+'\n')
         elif line_contains_label(line):
             load_label_instrs = convert_load_label(line)
-            wf.write(str(i) + ': instr = 9\'b'+ load_label_instrs[0] + ';')
+            wf.write(str(i) + ': inst = 9\'b'+ load_label_instrs[0] + ';')
             i+=1
             if comment is not None:
                 wf.write(comment)
             wf.write('\n')
             for instr in load_label_instrs[1:]:
-                wf.write(str(i) + ': instr = 9\'b'+ instr+';\n')
+                wf.write(str(i) + ': inst = 9\'b'+ instr+';\n')
                 i+=1
 
         else:
-            wf.write(str(i) + ': instr = 9\'b'+ line+ ';')
+            wf.write(str(i) + ': inst = 9\'b'+ line+ ';')
             if comment is not None:
                 wf.write(comment)
             wf.write('\n')
