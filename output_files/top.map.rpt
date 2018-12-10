@@ -1,5 +1,5 @@
 Analysis & Synthesis report for top
-Mon Dec 03 12:14:59 2018
+Mon Dec 10 02:15:41 2018
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -15,10 +15,13 @@ Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
   9. Multiplexer Restructuring Statistics (Restructuring Performed)
- 10. Port Connectivity Checks: "alu:au1"
- 11. Post-Synthesis Netlist Statistics for Top Partition
- 12. Elapsed Time Per Partition
- 13. Analysis & Synthesis Messages
+ 10. Parameter Settings for User Entity Instance: data_mem:data_mem1
+ 11. Port Connectivity Checks: "data_mem:data_mem1"
+ 12. Port Connectivity Checks: "alu:au1"
+ 13. Post-Synthesis Netlist Statistics for Top Partition
+ 14. Elapsed Time Per Partition
+ 15. Analysis & Synthesis Messages
+ 16. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -44,16 +47,16 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +-----------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status       ; Successful - Mon Dec 03 12:14:59 2018       ;
+; Analysis & Synthesis Status       ; Successful - Mon Dec 10 02:15:41 2018       ;
 ; Quartus Prime Version             ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                     ; top                                         ;
 ; Top-level Entity Name             ; top                                         ;
 ; Family                            ; Arria II GX                                 ;
 ; Logic utilization                 ; N/A                                         ;
-;     Combinational ALUTs           ; 1,238                                       ;
+;     Combinational ALUTs           ; 1,278                                       ;
 ;     Memory ALUTs                  ; 0                                           ;
-;     Dedicated logic registers     ; 2,120                                       ;
-; Total registers                   ; 2120                                        ;
+;     Dedicated logic registers     ; 2,121                                       ;
+; Total registers                   ; 2121                                        ;
 ; Total pins                        ; 3                                           ;
 ; Total virtual pins                ; 0                                           ;
 ; Total block memory bits           ; 0                                           ;
@@ -179,11 +182,11 @@ refer to the applicable agreement for further details.
 +----------------------------------+-----------------+------------------------------+---------------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                            ; Library ;
 +----------------------------------+-----------------+------------------------------+---------------------------------------------------------+---------+
+; data_mem.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/Omar/Documents/CSE 141L project/data_mem.sv    ;         ;
 ; top.sv                           ; yes             ; User SystemVerilog HDL File  ; C:/Users/Omar/Documents/CSE 141L project/top.sv         ;         ;
 ; rf.sv                            ; yes             ; User SystemVerilog HDL File  ; C:/Users/Omar/Documents/CSE 141L project/rf.sv          ;         ;
 ; pc.sv                            ; yes             ; User SystemVerilog HDL File  ; C:/Users/Omar/Documents/CSE 141L project/pc.sv          ;         ;
 ; imem.sv                          ; yes             ; User SystemVerilog HDL File  ; C:/Users/Omar/Documents/CSE 141L project/imem.sv        ;         ;
-; dmem.sv                          ; yes             ; User SystemVerilog HDL File  ; C:/Users/Omar/Documents/CSE 141L project/dmem.sv        ;         ;
 ; definitions.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/Users/Omar/Documents/CSE 141L project/definitions.sv ;         ;
 ; alu.sv                           ; yes             ; User SystemVerilog HDL File  ; C:/Users/Omar/Documents/CSE 141L project/alu.sv         ;         ;
 ; ctrl_dec.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/Omar/Documents/CSE 141L project/ctrl_dec.sv    ;         ;
@@ -195,34 +198,34 @@ refer to the applicable agreement for further details.
 +-----------------------------------------------+-----------+
 ; Resource                                      ; Usage     ;
 +-----------------------------------------------+-----------+
-; Estimated ALUTs Used                          ; 1238      ;
-;     -- Combinational ALUTs                    ; 1238      ;
+; Estimated ALUTs Used                          ; 1278      ;
+;     -- Combinational ALUTs                    ; 1278      ;
 ;     -- Memory ALUTs                           ; 0         ;
 ;     -- LUT_REGs                               ; 0         ;
-; Dedicated logic registers                     ; 2120      ;
+; Dedicated logic registers                     ; 2121      ;
 ;                                               ;           ;
-; Estimated ALUTs Unavailable                   ; 3         ;
-;     -- Due to unpartnered combinational logic ; 3         ;
+; Estimated ALUTs Unavailable                   ; 8         ;
+;     -- Due to unpartnered combinational logic ; 8         ;
 ;     -- Due to Memory ALUTs                    ; 0         ;
 ;                                               ;           ;
-; Total combinational functions                 ; 1238      ;
+; Total combinational functions                 ; 1278      ;
 ; Combinational ALUT usage by number of inputs  ;           ;
-;     -- 7 input functions                      ; 3         ;
-;     -- 6 input functions                      ; 837       ;
-;     -- 5 input functions                      ; 60        ;
-;     -- 4 input functions                      ; 24        ;
+;     -- 7 input functions                      ; 8         ;
+;     -- 6 input functions                      ; 875       ;
+;     -- 5 input functions                      ; 37        ;
+;     -- 4 input functions                      ; 44        ;
 ;     -- <=3 input functions                    ; 314       ;
 ;                                               ;           ;
 ; Combinational ALUTs by mode                   ;           ;
-;     -- normal mode                            ; 1218      ;
-;     -- extended LUT mode                      ; 3         ;
-;     -- arithmetic mode                        ; 17        ;
+;     -- normal mode                            ; 1252      ;
+;     -- extended LUT mode                      ; 8         ;
+;     -- arithmetic mode                        ; 18        ;
 ;     -- shared arithmetic mode                 ; 0         ;
 ;                                               ;           ;
-; Estimated ALUT/register pairs used            ; 3111      ;
+; Estimated ALUT/register pairs used            ; 3138      ;
 ;                                               ;           ;
-; Total registers                               ; 2120      ;
-;     -- Dedicated logic registers              ; 2120      ;
+; Total registers                               ; 2121      ;
+;     -- Dedicated logic registers              ; 2121      ;
 ;     -- I/O registers                          ; 0         ;
 ;     -- LUT_REGs                               ; 0         ;
 ;                                               ;           ;
@@ -232,25 +235,25 @@ refer to the applicable agreement for further details.
 ; DSP block 18-bit elements                     ; 0         ;
 ;                                               ;           ;
 ; Maximum fan-out node                          ; clk~input ;
-; Maximum fan-out                               ; 2120      ;
-; Total fan-out                                 ; 12494     ;
-; Average fan-out                               ; 3.71      ;
+; Maximum fan-out                               ; 2121      ;
+; Total fan-out                                 ; 12719     ;
+; Average fan-out                               ; 3.74      ;
 +-----------------------------------------------+-----------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                    ;
-+----------------------------+---------------------+---------------------------+-------------------+--------------+---------+-----------+-----------+-----------+------+--------------+---------------------+-------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 12x12 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------------+--------------+---------+-----------+-----------+-----------+------+--------------+---------------------+-------------+--------------+
-; |top                       ; 1238 (28)           ; 2120 (0)                  ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 3    ; 0            ; |top                ; top         ; work         ;
-;    |alu:au1|               ; 85 (85)             ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |top|alu:au1        ; alu         ; work         ;
-;    |ctrl_dec:dc1|          ; 3 (3)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |top|ctrl_dec:dc1   ; ctrl_dec    ; work         ;
-;    |dmem:dm1|              ; 1004 (1004)         ; 2048 (2048)               ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |top|dmem:dm1       ; dmem        ; work         ;
-;    |imem:im1|              ; 22 (22)             ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |top|imem:im1       ; imem        ; work         ;
-;    |pc:pc1|                ; 12 (12)             ; 8 (8)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |top|pc:pc1         ; pc          ; work         ;
-;    |rf:rf1|                ; 84 (84)             ; 64 (64)                   ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |top|rf:rf1         ; rf          ; work         ;
-+----------------------------+---------------------+---------------------------+-------------------+--------------+---------+-----------+-----------+-----------+------+--------------+---------------------+-------------+--------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                        ;
++----------------------------+---------------------+---------------------------+-------------------+--------------+---------+-----------+-----------+-----------+------+--------------+-------------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 12x12 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name     ; Entity Name ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------------+--------------+---------+-----------+-----------+-----------+------+--------------+-------------------------+-------------+--------------+
+; |top                       ; 1278 (31)           ; 2121 (0)                  ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 3    ; 0            ; |top                    ; top         ; work         ;
+;    |alu:au1|               ; 113 (113)           ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |top|alu:au1            ; alu         ; work         ;
+;    |ctrl_dec:dc1|          ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |top|ctrl_dec:dc1       ; ctrl_dec    ; work         ;
+;    |data_mem:data_mem1|    ; 1004 (1004)         ; 2048 (2048)               ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |top|data_mem:data_mem1 ; data_mem    ; work         ;
+;    |imem:im1|              ; 56 (56)             ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |top|imem:im1           ; imem        ; work         ;
+;    |pc:pc1|                ; 15 (15)             ; 9 (9)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |top|pc:pc1             ; pc          ; work         ;
+;    |rf:rf1|                ; 58 (58)             ; 64 (64)                   ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |top|rf:rf1             ; rf          ; work         ;
++----------------------------+---------------------+---------------------------+-------------------+--------------+---------+-----------+-----------+-----------+------+--------------+-------------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -259,7 +262,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 2120  ;
+; Total registers                              ; 2121  ;
 ; Number of registers using Synchronous Clear  ; 8     ;
 ; Number of registers using Synchronous Load   ; 8     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
@@ -275,16 +278,35 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 ; 3:1                ; 8 bits    ; 16 ALUTs      ; 0 ALUTs              ; 16 ALUTs               ; Yes        ; |top|pc:pc1|PC[7]          ;
-; 3:1                ; 3 bits    ; 6 ALUTs       ; 6 ALUTs              ; 0 ALUTs                ; No         ; |top|ptr_w[0]              ;
+; 3:1                ; 3 bits    ; 6 ALUTs       ; 6 ALUTs              ; 0 ALUTs                ; No         ; |top|ptr_w[1]              ;
 ; 4:1                ; 2 bits    ; 4 ALUTs       ; 4 ALUTs              ; 0 ALUTs                ; No         ; |top|alu:au1|ShiftLeft0    ;
 ; 4:1                ; 2 bits    ; 4 ALUTs       ; 4 ALUTs              ; 0 ALUTs                ; No         ; |top|alu:au1|ShiftRight0   ;
-; 4:1                ; 2 bits    ; 4 ALUTs       ; 4 ALUTs              ; 0 ALUTs                ; No         ; |top|alu:au1|ShiftLeft0    ;
+; 4:1                ; 2 bits    ; 4 ALUTs       ; 4 ALUTs              ; 0 ALUTs                ; No         ; |top|alu:au1|ShiftRight0   ;
 ; 8:1                ; 8 bits    ; 40 ALUTs      ; 40 ALUTs             ; 0 ALUTs                ; No         ; |top|rf:rf1|Mux8           ;
 ; 8:1                ; 8 bits    ; 40 ALUTs      ; 40 ALUTs             ; 0 ALUTs                ; No         ; |top|rf:rf1|Mux5           ;
 ; 3:1                ; 3 bits    ; 6 ALUTs       ; 6 ALUTs              ; 0 ALUTs                ; No         ; |top|Selector5             ;
 ; 16:1               ; 4 bits    ; 40 ALUTs      ; 32 ALUTs             ; 8 ALUTs                ; No         ; |top|alu:au1|Mux7          ;
 ; 16:1               ; 4 bits    ; 40 ALUTs      ; 32 ALUTs             ; 8 ALUTs                ; No         ; |top|alu:au1|Mux0          ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+
+
++-----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: data_mem:data_mem1 ;
++----------------+-------+----------------------------------------+
+; Parameter Name ; Value ; Type                                   ;
++----------------+-------+----------------------------------------+
+; AW             ; 8     ; Signed Integer                         ;
++----------------+-------+----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------+
+; Port Connectivity Checks: "data_mem:data_mem1" ;
++---------+-------+----------+-------------------+
+; Port    ; Type  ; Severity ; Details           ;
++---------+-------+----------+-------------------+
+; ReadMem ; Input ; Info     ; Stuck at VCC      ;
++---------+-------+----------+-------------------+
 
 
 +---------------------------------------------------+
@@ -302,26 +324,28 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriaii_ff            ; 2120                        ;
+; arriaii_ff            ; 2121                        ;
 ;     ENA               ; 2112                        ;
 ;     SCLR SLD          ; 8                           ;
+;     plain             ; 1                           ;
 ; boundary_port         ; 3                           ;
-; stratixiv_lcell_comb  ; 1238                        ;
-;     arith             ; 17                          ;
-;         1 data inputs ; 8                           ;
-;         4 data inputs ; 1                           ;
-;         5 data inputs ; 8                           ;
-;     extend            ; 3                           ;
-;         7 data inputs ; 3                           ;
-;     normal            ; 1218                        ;
-;         2 data inputs ; 266                         ;
-;         3 data inputs ; 40                          ;
-;         4 data inputs ; 23                          ;
-;         5 data inputs ; 52                          ;
-;         6 data inputs ; 837                         ;
+; stratixiv_lcell_comb  ; 1278                        ;
+;     arith             ; 18                          ;
+;         1 data inputs ; 9                           ;
+;         2 data inputs ; 1                           ;
+;         4 data inputs ; 3                           ;
+;         5 data inputs ; 5                           ;
+;     extend            ; 8                           ;
+;         7 data inputs ; 8                           ;
+;     normal            ; 1252                        ;
+;         2 data inputs ; 269                         ;
+;         3 data inputs ; 35                          ;
+;         4 data inputs ; 41                          ;
+;         5 data inputs ; 32                          ;
+;         6 data inputs ; 875                         ;
 ;                       ;                             ;
-; Max LUT depth         ; 9.70                        ;
-; Average LUT depth     ; 5.89                        ;
+; Max LUT depth         ; 11.50                       ;
+; Average LUT depth     ; 6.66                        ;
 +-----------------------+-----------------------------+
 
 
@@ -330,7 +354,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:02     ;
+; Top            ; 00:00:05     ;
 +----------------+--------------+
 
 
@@ -340,28 +364,34 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Mon Dec 03 12:14:49 2018
+    Info: Processing started: Mon Dec 10 02:15:23 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off top -c top
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file toplevel_tb.sv
+    Info (12023): Found entity 1: TopLevel_tb File: C:/Users/Omar/Documents/CSE 141L project/TopLevel_tb.sv Line: 7
+Info (12021): Found 1 design units, including 1 entities, in source file top_test_f2i.sv
+    Info (12023): Found entity 1: top_test_f2i File: C:/Users/Omar/Documents/CSE 141L project/top_test_f2i.sv Line: 4
+Info (12021): Found 1 design units, including 1 entities, in source file int2flt_tb.sv
+    Info (12023): Found entity 1: int2flt_tb File: C:/Users/Omar/Documents/CSE 141L project/int2flt_tb.sv Line: 8
+Info (12021): Found 1 design units, including 1 entities, in source file int2flt.sv
+    Info (12023): Found entity 1: int2flt File: C:/Users/Omar/Documents/CSE 141L project/int2flt.sv Line: 4
+Info (12021): Found 1 design units, including 1 entities, in source file flt2int_tb.sv
+    Info (12023): Found entity 1: flt2int_tb File: C:/Users/Omar/Documents/CSE 141L project/flt2int_tb.sv Line: 7
+Info (12021): Found 1 design units, including 1 entities, in source file decrypt_tb.sv
+    Info (12023): Found entity 1: Lab4_tb File: C:/Users/Omar/Documents/CSE 141L project/decrypt_tb.sv Line: 5
+Info (12021): Found 1 design units, including 1 entities, in source file data_mem.sv
+    Info (12023): Found entity 1: data_mem File: C:/Users/Omar/Documents/CSE 141L project/data_mem.sv Line: 10
+Info (12021): Found 1 design units, including 1 entities, in source file encrypt_tb.sv
+    Info (12023): Found entity 1: encrypt_tb File: C:/Users/Omar/Documents/CSE 141L project/encrypt_tb.sv Line: 5
 Info (12021): Found 1 design units, including 1 entities, in source file top.sv
     Info (12023): Found entity 1: top File: C:/Users/Omar/Documents/CSE 141L project/top.sv Line: 4
-Info (12021): Found 1 design units, including 1 entities, in source file test_bench.sv
-    Info (12023): Found entity 1: test_bench File: C:/Users/Omar/Documents/CSE 141L project/test_bench.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file rf.sv
     Info (12023): Found entity 1: rf File: C:/Users/Omar/Documents/CSE 141L project/rf.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file pc.sv
     Info (12023): Found entity 1: pc File: C:/Users/Omar/Documents/CSE 141L project/pc.sv Line: 4
-Info (12021): Found 1 design units, including 1 entities, in source file lut_pc.sv
-    Info (12023): Found entity 1: lut_pc File: C:/Users/Omar/Documents/CSE 141L project/lut_pc.sv Line: 4
-Info (12021): Found 1 design units, including 1 entities, in source file lut_m.sv
-    Info (12023): Found entity 1: lut_m File: C:/Users/Omar/Documents/CSE 141L project/lut_m.sv Line: 6
-Info (12021): Found 1 design units, including 1 entities, in source file ls_dec.sv
-    Info (12023): Found entity 1: ls_dec File: C:/Users/Omar/Documents/CSE 141L project/ls_dec.sv Line: 5
 Info (12021): Found 1 design units, including 1 entities, in source file imem.sv
     Info (12023): Found entity 1: imem File: C:/Users/Omar/Documents/CSE 141L project/imem.sv Line: 5
-Info (12021): Found 1 design units, including 1 entities, in source file dmem.sv
-    Info (12023): Found entity 1: dmem File: C:/Users/Omar/Documents/CSE 141L project/dmem.sv Line: 2
 Info (12021): Found 1 design units, including 0 entities, in source file definitions.sv
     Info (12022): Found design unit 1: definitions (SystemVerilog) File: C:/Users/Omar/Documents/CSE 141L project/definitions.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file alu.sv
@@ -372,31 +402,47 @@ Info (12021): Found 1 design units, including 1 entities, in source file alu_tb.
     Info (12023): Found entity 1: alu_tb File: C:/Users/Omar/Documents/CSE 141L project/alu_tb.sv Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file ctrl_dec_tb.sv
     Info (12023): Found entity 1: ctrl_dec_tb File: C:/Users/Omar/Documents/CSE 141L project/ctrl_dec_tb.sv Line: 2
-Warning (10236): Verilog HDL Implicit Net warning at top.sv(32): created implicit net for "sh_d" File: C:/Users/Omar/Documents/CSE 141L project/top.sv Line: 32
+Warning (10236): Verilog HDL Implicit Net warning at top.sv(33): created implicit net for "sh_d" File: C:/Users/Omar/Documents/CSE 141L project/top.sv Line: 33
 Info (12127): Elaborating entity "top" for the top level hierarchy
 Warning (10036): Verilog HDL or VHDL warning at top.sv(14): object "dm_in" assigned a value but never read File: C:/Users/Omar/Documents/CSE 141L project/top.sv Line: 14
-Warning (10230): Verilog HDL assignment warning at top.sv(47): truncated value with size 32 to match size of target (8) File: C:/Users/Omar/Documents/CSE 141L project/top.sv Line: 47
-Info (12128): Elaborating entity "pc" for hierarchy "pc:pc1" File: C:/Users/Omar/Documents/CSE 141L project/top.sv Line: 61
-Warning (10230): Verilog HDL assignment warning at pc.sv(21): truncated value with size 32 to match size of target (8) File: C:/Users/Omar/Documents/CSE 141L project/pc.sv Line: 21
-Info (12128): Elaborating entity "imem" for hierarchy "imem:im1" File: C:/Users/Omar/Documents/CSE 141L project/top.sv Line: 65
-Info (12128): Elaborating entity "ctrl_dec" for hierarchy "ctrl_dec:dc1" File: C:/Users/Omar/Documents/CSE 141L project/top.sv Line: 74
-Info (12128): Elaborating entity "rf" for hierarchy "rf:rf1" File: C:/Users/Omar/Documents/CSE 141L project/top.sv Line: 86
-Info (12128): Elaborating entity "alu" for hierarchy "alu:au1" File: C:/Users/Omar/Documents/CSE 141L project/top.sv Line: 97
+Warning (10230): Verilog HDL assignment warning at top.sv(48): truncated value with size 32 to match size of target (8) File: C:/Users/Omar/Documents/CSE 141L project/top.sv Line: 48
+Info (12128): Elaborating entity "pc" for hierarchy "pc:pc1" File: C:/Users/Omar/Documents/CSE 141L project/top.sv Line: 62
+Warning (10230): Verilog HDL assignment warning at pc.sv(21): truncated value with size 32 to match size of target (9) File: C:/Users/Omar/Documents/CSE 141L project/pc.sv Line: 21
+Info (12128): Elaborating entity "imem" for hierarchy "imem:im1" File: C:/Users/Omar/Documents/CSE 141L project/top.sv Line: 66
+Info (12128): Elaborating entity "ctrl_dec" for hierarchy "ctrl_dec:dc1" File: C:/Users/Omar/Documents/CSE 141L project/top.sv Line: 75
+Info (12128): Elaborating entity "rf" for hierarchy "rf:rf1" File: C:/Users/Omar/Documents/CSE 141L project/top.sv Line: 87
+Info (12128): Elaborating entity "alu" for hierarchy "alu:au1" File: C:/Users/Omar/Documents/CSE 141L project/top.sv Line: 98
 Warning (10036): Verilog HDL or VHDL warning at alu.sv(14): object "op_mnemonic" assigned a value but never read File: C:/Users/Omar/Documents/CSE 141L project/alu.sv Line: 14
-Info (12128): Elaborating entity "dmem" for hierarchy "dmem:dm1" File: C:/Users/Omar/Documents/CSE 141L project/top.sv Line: 105
+Info (12128): Elaborating entity "data_mem" for hierarchy "data_mem:data_mem1" File: C:/Users/Omar/Documents/CSE 141L project/top.sv Line: 107
+Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
+    Warning (13049): Converted tri-state buffer "data_mem:data_mem1|DataOut[0]" feeding internal logic into a wire File: C:/Users/Omar/Documents/CSE 141L project/data_mem.sv Line: 16
+    Warning (13049): Converted tri-state buffer "data_mem:data_mem1|DataOut[1]" feeding internal logic into a wire File: C:/Users/Omar/Documents/CSE 141L project/data_mem.sv Line: 16
+    Warning (13049): Converted tri-state buffer "data_mem:data_mem1|DataOut[2]" feeding internal logic into a wire File: C:/Users/Omar/Documents/CSE 141L project/data_mem.sv Line: 16
+    Warning (13049): Converted tri-state buffer "data_mem:data_mem1|DataOut[3]" feeding internal logic into a wire File: C:/Users/Omar/Documents/CSE 141L project/data_mem.sv Line: 16
+    Warning (13049): Converted tri-state buffer "data_mem:data_mem1|DataOut[4]" feeding internal logic into a wire File: C:/Users/Omar/Documents/CSE 141L project/data_mem.sv Line: 16
+    Warning (13049): Converted tri-state buffer "data_mem:data_mem1|DataOut[5]" feeding internal logic into a wire File: C:/Users/Omar/Documents/CSE 141L project/data_mem.sv Line: 16
+    Warning (13049): Converted tri-state buffer "data_mem:data_mem1|DataOut[6]" feeding internal logic into a wire File: C:/Users/Omar/Documents/CSE 141L project/data_mem.sv Line: 16
+    Warning (13049): Converted tri-state buffer "data_mem:data_mem1|DataOut[7]" feeding internal logic into a wire File: C:/Users/Omar/Documents/CSE 141L project/data_mem.sv Line: 16
 Info (276014): Found 1 instances of uninferred RAM logic
-    Info (276007): RAM logic "dmem:dm1|guts" is uninferred due to asynchronous read logic File: C:/Users/Omar/Documents/CSE 141L project/dmem.sv Line: 9
+    Info (276007): RAM logic "data_mem:data_mem1|my_memory" is uninferred due to asynchronous read logic File: C:/Users/Omar/Documents/CSE 141L project/data_mem.sv Line: 18
 Info (286030): Timing-Driven Synthesis is running
+Info (144001): Generated suppressed messages file C:/Users/Omar/Documents/CSE 141L project/output_files/top.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 3353 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 3393 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
     Info (21059): Implemented 1 output pins
-    Info (21061): Implemented 3350 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 4889 megabytes
-    Info: Processing ended: Mon Dec 03 12:14:59 2018
-    Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:18
+    Info (21061): Implemented 3390 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 15 warnings
+    Info: Peak virtual memory: 4891 megabytes
+    Info: Processing ended: Mon Dec 10 02:15:41 2018
+    Info: Elapsed time: 00:00:18
+    Info: Total CPU time (on all processors): 00:00:20
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in C:/Users/Omar/Documents/CSE 141L project/output_files/top.map.smsg.
 
 

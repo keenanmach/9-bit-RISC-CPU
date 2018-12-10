@@ -10,39 +10,40 @@ cModel Technology
 Z0 dC:/Users/Omar/Documents/CSE 141L project/simulation/modelsim
 valu
 Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-Z2 DXx4 work 11 definitions 0 22 n3HTc5SZfo75]Xc;JZ`ok2
-DXx4 work 11 alu_sv_unit 0 22 UYYM7Y@<ElJhCSfEdR?DV1
+Z2 DXx4 work 11 definitions 0 22 <KC>@n]0fJCf^OOW[HJ_:0
+DXx4 work 11 alu_sv_unit 0 22 UUXF:CM^f4Yb]cO5Bma941
 Z3 VDg1SIo80bB@j0V0VzS_@n1
 r1
 !s85 0
 31
 !i10b 1
 !s100 0RR82hWVWODY^L]k@Ae`B2
-I?Ij`VPEdfhCC:]MEOfjGo1
+I6FdE?K5AH3`7=AXem7c_;2
 !s105 alu_sv_unit
 S1
 R0
-Z4 w1543868089
+Z4 w1544424091
 Z5 8C:/Users/Omar/Documents/CSE 141L project/alu.sv
 Z6 FC:/Users/Omar/Documents/CSE 141L project/alu.sv
 L0 4
 Z7 OV;L;10.5b;63
-Z8 !s108 1543868109.000000
+Z8 !s108 1544424800.000000
 Z9 !s107 C:/Users/Omar/Documents/CSE 141L project/alu.sv|
-Z10 !s90 -reportprogress|300|-work|work|C:/Users/Omar/Documents/CSE 141L project/alu.sv|
+Z10 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Omar/Documents/CSE 141L project|C:/Users/Omar/Documents/CSE 141L project/alu.sv|
 !i113 1
-Z11 o-work work
-Z12 tCvgOpt 0
+Z11 o-sv -work work
+Z12 !s92 -sv -work work {+incdir+C:/Users/Omar/Documents/CSE 141L project}
+Z13 tCvgOpt 0
 Xalu_sv_unit
 R1
 R2
-VUYYM7Y@<ElJhCSfEdR?DV1
+VUUXF:CM^f4Yb]cO5Bma941
 r1
 !s85 0
 31
 !i10b 1
 !s100 N[f<?O=cMajLI4eV0U>Fa3
-IUYYM7Y@<ElJhCSfEdR?DV1
+IUUXF:CM^f4Yb]cO5Bma941
 !i103 1
 S1
 R0
@@ -57,163 +58,93 @@ R10
 !i113 1
 R11
 R12
-valu_tb
-R1
-R2
-DXx4 work 14 alu_tb_sv_unit 0 22 z1Wa3nEZHzZGzhk]BYeN70
-R3
-r1
-!s85 0
-31
-!i10b 1
-!s100 C=i66[hWf:R[nICo5mJFT0
-IFKzK`jf[1G:J:]_NT>9?02
-!s105 alu_tb_sv_unit
-S1
-R0
-Z13 w1542520318
-Z14 8C:/Users/Omar/Documents/CSE 141L project/alu_tb.sv
-Z15 FC:/Users/Omar/Documents/CSE 141L project/alu_tb.sv
-L0 2
-R7
-R8
-Z16 !s107 C:/Users/Omar/Documents/CSE 141L project/alu_tb.sv|
-Z17 !s90 -reportprogress|300|-work|work|C:/Users/Omar/Documents/CSE 141L project/alu_tb.sv|
-!i113 1
-R11
-R12
-Xalu_tb_sv_unit
-R1
-R2
-Vz1Wa3nEZHzZGzhk]BYeN70
-r1
-!s85 0
-31
-!i10b 1
-!s100 GAnGg:V@_9@b595Nz4?]X3
-Iz1Wa3nEZHzZGzhk]BYeN70
-!i103 1
-S1
-R0
 R13
-R14
-R15
-L0 1
-R7
-R8
-R16
-R17
-!i113 1
-R11
-R12
 vctrl_dec
 R1
 R2
-DXx4 work 16 ctrl_dec_sv_unit 0 22 o4@OB4@:zcXHBFmQCH]]T3
+DXx4 work 16 ctrl_dec_sv_unit 0 22 ]X8c1=U_<19GHSKJ]f4>P0
 R3
 r1
 !s85 0
 31
 !i10b 1
 !s100 93XPZYo4>1C?41>cA;XI]3
-IZ@l^j84:bUVmHU8_?b0d]0
+I?bgzme?No8>CjOmiF`n]d1
 !s105 ctrl_dec_sv_unit
 S1
 R0
-R13
-Z18 8C:/Users/Omar/Documents/CSE 141L project/ctrl_dec.sv
-Z19 FC:/Users/Omar/Documents/CSE 141L project/ctrl_dec.sv
+Z14 w1544244264
+Z15 8C:/Users/Omar/Documents/CSE 141L project/ctrl_dec.sv
+Z16 FC:/Users/Omar/Documents/CSE 141L project/ctrl_dec.sv
 L0 5
 R7
 R8
-Z20 !s107 C:/Users/Omar/Documents/CSE 141L project/ctrl_dec.sv|
-Z21 !s90 -reportprogress|300|-work|work|C:/Users/Omar/Documents/CSE 141L project/ctrl_dec.sv|
+Z17 !s107 C:/Users/Omar/Documents/CSE 141L project/ctrl_dec.sv|
+Z18 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Omar/Documents/CSE 141L project|C:/Users/Omar/Documents/CSE 141L project/ctrl_dec.sv|
 !i113 1
 R11
 R12
+R13
 Xctrl_dec_sv_unit
 R1
 R2
-Vo4@OB4@:zcXHBFmQCH]]T3
+V]X8c1=U_<19GHSKJ]f4>P0
 r1
 !s85 0
 31
 !i10b 1
 !s100 8F8jofKI>VzjEaD`8zgzF3
-Io4@OB4@:zcXHBFmQCH]]T3
+I]X8c1=U_<19GHSKJ]f4>P0
 !i103 1
 S1
 R0
-R13
-R18
-R19
+R14
+R15
+R16
 L0 4
 R7
 R8
-R20
-R21
+R17
+R18
 !i113 1
 R11
 R12
-vctrl_dec_tb
+R13
+vdata_mem
 R1
-R2
-DXx4 work 19 ctrl_dec_tb_sv_unit 0 22 U12^YcQo25@b^>o1X?Smm0
+Z19 !s110 1544424800
+!i10b 1
+!s100 I<jo=a?VXH_]7bkQ7jF9i0
+IISa;W@hEA3c00zTLDmbH61
 R3
+!s105 data_mem_sv_unit
+S1
+R0
+w1544243940
+8C:/Users/Omar/Documents/CSE 141L project/data_mem.sv
+FC:/Users/Omar/Documents/CSE 141L project/data_mem.sv
+L0 10
+R7
 r1
 !s85 0
 31
-!i10b 1
-!s100 LW=PE3F:mkaG6UiUE1C:S3
-IcJWF@A_adS1kIU:GS32MQ0
-!s105 ctrl_dec_tb_sv_unit
-S1
-R0
-R13
-Z22 8C:/Users/Omar/Documents/CSE 141L project/ctrl_dec_tb.sv
-Z23 FC:/Users/Omar/Documents/CSE 141L project/ctrl_dec_tb.sv
-L0 2
-R7
 R8
-Z24 !s107 C:/Users/Omar/Documents/CSE 141L project/ctrl_dec_tb.sv|
-Z25 !s90 -reportprogress|300|-work|work|C:/Users/Omar/Documents/CSE 141L project/ctrl_dec_tb.sv|
+!s107 C:/Users/Omar/Documents/CSE 141L project/data_mem.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Omar/Documents/CSE 141L project|C:/Users/Omar/Documents/CSE 141L project/data_mem.sv|
 !i113 1
 R11
 R12
-Xctrl_dec_tb_sv_unit
-R1
-R2
-VU12^YcQo25@b^>o1X?Smm0
-r1
-!s85 0
-31
-!i10b 1
-!s100 <4?FkFPj7Y23F4];3R_UE3
-IU12^YcQo25@b^>o1X?Smm0
-!i103 1
-S1
-R0
 R13
-R22
-R23
-L0 1
-R7
-R8
-R24
-R25
-!i113 1
-R11
-R12
 Xdefinitions
 R1
-Z26 !s110 1543868109
+R19
 !i10b 1
 !s100 g;MoDCJh18_gKn:eFUTCb3
-In3HTc5SZfo75]Xc;JZ`ok2
-Vn3HTc5SZfo75]Xc;JZ`ok2
+I<KC>@n]0fJCf^OOW[HJ_:0
+V<KC>@n]0fJCf^OOW[HJ_:0
 S1
 R0
-R13
+R14
 8C:/Users/Omar/Documents/CSE 141L project/definitions.sv
 FC:/Users/Omar/Documents/CSE 141L project/definitions.sv
 L0 3
@@ -223,45 +154,70 @@ r1
 31
 R8
 !s107 C:/Users/Omar/Documents/CSE 141L project/definitions.sv|
-!s90 -reportprogress|300|-work|work|C:/Users/Omar/Documents/CSE 141L project/definitions.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Omar/Documents/CSE 141L project|C:/Users/Omar/Documents/CSE 141L project/definitions.sv|
 !i113 1
 R11
 R12
-vdmem
+R13
+vencrypt_tb
 R1
-R26
+!s110 1544424836
 !i10b 1
-!s100 G1lQ9]Jhc6iGL5;hD3K`80
-IZoj=lOdI1F_zM@]lRAdQV2
+!s100 lch53<:FDEnB[6G80BA510
+IzC1:[ZL8GR:4e_^<oQCOl1
 R3
-!s105 dmem_sv_unit
+!s105 encrypt_tb_sv_unit
 S1
 R0
-R13
-8C:/Users/Omar/Documents/CSE 141L project/dmem.sv
-FC:/Users/Omar/Documents/CSE 141L project/dmem.sv
-L0 2
+w1544424330
+8C:/Users/Omar/Documents/CSE 141L project/encrypt_tb.sv
+FC:/Users/Omar/Documents/CSE 141L project/encrypt_tb.sv
+L0 5
 R7
 r1
 !s85 0
 31
-R8
-!s107 C:/Users/Omar/Documents/CSE 141L project/dmem.sv|
-!s90 -reportprogress|300|-work|work|C:/Users/Omar/Documents/CSE 141L project/dmem.sv|
+!s108 1544424836.000000
+!s107 C:/Users/Omar/Documents/CSE 141L project/encrypt_tb.sv|
+!s90 -reportprogress|300|-work|work|C:/Users/Omar/Documents/CSE 141L project/encrypt_tb.sv|
 !i113 1
-R11
-R12
+Z20 o-work work
+R13
+vflt2int_tb
+R1
+Z21 !s110 1544435859
+!i10b 1
+!s100 DA@<WL@O4Z@`43_1DWB0B0
+IVE8eQcTPg5h9b5HHSPF_82
+R3
+!s105 flt2int_tb_sv_unit
+S1
+R0
+w1544417318
+8C:/Users/Omar/Documents/CSE 141L project/flt2int_tb.sv
+FC:/Users/Omar/Documents/CSE 141L project/flt2int_tb.sv
+L0 7
+R7
+r1
+!s85 0
+31
+Z22 !s108 1544435859.000000
+!s107 C:/Users/Omar/Documents/CSE 141L project/flt2int_tb.sv|
+!s90 -reportprogress|300|-work|work|C:/Users/Omar/Documents/CSE 141L project/flt2int_tb.sv|
+!i113 1
+R20
+R13
 vimem
 R1
-R26
+R21
 !i10b 1
-!s100 QjmEN>mjcNP0UL8ZQ;<?c2
-IZIB[]]dT8U=mzM`6>K?a<0
+!s100 =]L4ZH4hIV<@:U^8l1fYM3
+ImZAf`In:9SJYLIIF=loIf3
 R3
 !s105 imem_sv_unit
 S1
 R0
-w1543868087
+w1544435790
 8C:/Users/Omar/Documents/CSE 141L project/imem.sv
 FC:/Users/Omar/Documents/CSE 141L project/imem.sv
 L0 5
@@ -269,145 +225,72 @@ R7
 r1
 !s85 0
 31
-R8
+R22
 !s107 C:/Users/Omar/Documents/CSE 141L project/imem.sv|
 !s90 -reportprogress|300|-work|work|C:/Users/Omar/Documents/CSE 141L project/imem.sv|
 !i113 1
-R11
-R12
-vls_dec
-R1
-R2
-DXx4 work 14 ls_dec_sv_unit 0 22 9SIWd7Q1OY332H2cB;Unf0
-R3
-r1
-!s85 0
-31
-!i10b 1
-!s100 [V6HIKeP:;NNkoG8bffmL3
-IaTzl<QB`DNl5]iY<kiKHD1
-!s105 ls_dec_sv_unit
-S1
-R0
+R20
 R13
-Z27 8C:/Users/Omar/Documents/CSE 141L project/ls_dec.sv
-Z28 FC:/Users/Omar/Documents/CSE 141L project/ls_dec.sv
-L0 5
-R7
-R8
-Z29 !s107 C:/Users/Omar/Documents/CSE 141L project/ls_dec.sv|
-Z30 !s90 -reportprogress|300|-work|work|C:/Users/Omar/Documents/CSE 141L project/ls_dec.sv|
-!i113 1
-R11
-R12
-Xls_dec_sv_unit
-R1
-R2
-V9SIWd7Q1OY332H2cB;Unf0
-r1
-!s85 0
-31
-!i10b 1
-!s100 AZnH1JdEGB0@M:bR0om[m3
-I9SIWd7Q1OY332H2cB;Unf0
-!i103 1
-S1
-R0
-R13
-R27
-R28
-L0 4
-R7
-R8
-R29
-R30
-!i113 1
-R11
-R12
-vlut_pc
-R1
-Z31 !s110 1543868110
-!i10b 1
-!s100 HfDZ@GlY>_GFTLQ4`@fXU0
-IEQ=:91G0152;1PhWYOj6;0
-R3
-!s105 lut_pc_sv_unit
-S1
-R0
-R13
-8C:/Users/Omar/Documents/CSE 141L project/lut_pc.sv
-FC:/Users/Omar/Documents/CSE 141L project/lut_pc.sv
-L0 4
-R7
-r1
-!s85 0
-31
-Z32 !s108 1543868110.000000
-!s107 C:/Users/Omar/Documents/CSE 141L project/lut_pc.sv|
-!s90 -reportprogress|300|-work|work|C:/Users/Omar/Documents/CSE 141L project/lut_pc.sv|
-!i113 1
-R11
-R12
 vpc
 R1
 R2
-DXx4 work 10 pc_sv_unit 0 22 >gJ;]43:OaH2`kGd=ZXEF3
+DXx4 work 10 pc_sv_unit 0 22 hmjLE1AEJz7JGj2:VU?GY0
 R3
 r1
 !s85 0
 31
 !i10b 1
-!s100 _Qk3AR:BOOA4lc3`Mdmg03
-I@05JZz@9EUzLR27FD]c@A0
+!s100 lLe_AbgN3ghZ918AVX:;V1
+ICYbjYUU;z@fdFE]CK_E3B0
 !s105 pc_sv_unit
 S1
 R0
-Z33 w1543867844
-Z34 8C:/Users/Omar/Documents/CSE 141L project/pc.sv
-Z35 FC:/Users/Omar/Documents/CSE 141L project/pc.sv
+Z23 w1544436919
+Z24 8C:/Users/Omar/Documents/CSE 141L project/pc.sv
+Z25 FC:/Users/Omar/Documents/CSE 141L project/pc.sv
 L0 4
 R7
-R32
-Z36 !s107 C:/Users/Omar/Documents/CSE 141L project/pc.sv|
-Z37 !s90 -reportprogress|300|-work|work|C:/Users/Omar/Documents/CSE 141L project/pc.sv|
+Z26 !s108 1544436931.000000
+Z27 !s107 C:/Users/Omar/Documents/CSE 141L project/pc.sv|
+Z28 !s90 -reportprogress|300|-work|work|C:/Users/Omar/Documents/CSE 141L project/pc.sv|
 !i113 1
-R11
-R12
+R20
+R13
 Xpc_sv_unit
 R1
 R2
-V>gJ;]43:OaH2`kGd=ZXEF3
+VhmjLE1AEJz7JGj2:VU?GY0
 r1
 !s85 0
 31
 !i10b 1
 !s100 3BCb?Q<gjUfAo0FS<K;lS2
-I>gJ;]43:OaH2`kGd=ZXEF3
+IhmjLE1AEJz7JGj2:VU?GY0
 !i103 1
 S1
 R0
-R33
-R34
-R35
+R23
+R24
+R25
 L0 3
 R7
-R32
-R36
-R37
+R26
+R27
+R28
 !i113 1
-R11
-R12
+R20
+R13
 vrf
 R1
-R31
+R19
 !i10b 1
 !s100 jVN3QYb88Y01<;glzTkQh3
-I0<3jjb;n9mb@9Sh3RM__g3
+IQ[FPg9lDQQmafn0jVCn=e3
 R3
 !s105 rf_sv_unit
 S1
 R0
-w1543865265
+R14
 8C:/Users/Omar/Documents/CSE 141L project/rf.sv
 FC:/Users/Omar/Documents/CSE 141L project/rf.sv
 L0 3
@@ -415,107 +298,83 @@ R7
 r1
 !s85 0
 31
-R32
+R8
 !s107 C:/Users/Omar/Documents/CSE 141L project/rf.sv|
-!s90 -reportprogress|300|-work|work|C:/Users/Omar/Documents/CSE 141L project/rf.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Omar/Documents/CSE 141L project|C:/Users/Omar/Documents/CSE 141L project/rf.sv|
 !i113 1
 R11
 R12
-vtest_bench
-R1
-R31
-!i10b 1
-!s100 >`g2_MLKeljT8?;9Nz<d_1
-IcMT6k;6K7n4V4OXCcCZBh2
-R3
-!s105 test_bench_sv_unit
-S1
-R0
 R13
-8C:/Users/Omar/Documents/CSE 141L project/test_bench.sv
-FC:/Users/Omar/Documents/CSE 141L project/test_bench.sv
-L0 3
-R7
-r1
-!s85 0
-31
-R32
-!s107 C:/Users/Omar/Documents/CSE 141L project/test_bench.sv|
-!s90 -reportprogress|300|-work|work|C:/Users/Omar/Documents/CSE 141L project/test_bench.sv|
-!i113 1
-R11
-R12
 vtop
 R1
 R2
-DXx4 work 11 top_sv_unit 0 22 lN7?P[H6=nQmNX3Ym_z@?3
+DXx4 work 11 top_sv_unit 0 22 e6on0>:_f7CGQ^foGRifb1
 R3
 r1
 !s85 0
 31
 !i10b 1
-!s100 Mm0TZ^XB[MTnC4:lIgN_A0
-INaWhcSkzQObg]SKOPbif42
+!s100 Xa<]mCSKo=<:::IGWb0`k2
+IjEAeQcU_bW:e7422CcXZ?3
 !s105 top_sv_unit
 S1
 R0
-Z38 w1543867842
-Z39 8C:/Users/Omar/Documents/CSE 141L project/top.sv
-Z40 FC:/Users/Omar/Documents/CSE 141L project/top.sv
+Z29 w1544435789
+Z30 8C:/Users/Omar/Documents/CSE 141L project/top.sv
+Z31 FC:/Users/Omar/Documents/CSE 141L project/top.sv
 L0 4
 R7
-R32
-Z41 !s107 C:/Users/Omar/Documents/CSE 141L project/top.sv|
-Z42 !s90 -reportprogress|300|-work|work|C:/Users/Omar/Documents/CSE 141L project/top.sv|
+R22
+Z32 !s107 C:/Users/Omar/Documents/CSE 141L project/top.sv|
+Z33 !s90 -reportprogress|300|-work|work|C:/Users/Omar/Documents/CSE 141L project/top.sv|
 !i113 1
-R11
-R12
+R20
+R13
 Xtop_sv_unit
 R1
 R2
-VlN7?P[H6=nQmNX3Ym_z@?3
+Ve6on0>:_f7CGQ^foGRifb1
 r1
 !s85 0
 31
 !i10b 1
-!s100 `jzz9e`=F@gVio4QDj7VR3
-IlN7?P[H6=nQmNX3Ym_z@?3
+!s100 2jWOGIE6E2EELIN?c;V_z0
+Ie6on0>:_f7CGQ^foGRifb1
 !i103 1
 S1
 R0
-R38
-R39
-R40
+R29
+R30
+R31
 L0 3
 R7
+R22
 R32
-R41
-R42
+R33
 !i113 1
-R11
-R12
-vTopLevel_tb
+R20
+R13
+vtop_test_f2i
 R1
-R31
+!s110 1544426079
 !i10b 1
-!s100 4jgFRmM]J6:GR@jUZ6Na40
-ICQ0XKMPgeO9GRnoJo@bU[0
+!s100 Q:`JQX;60kNKnhM@zS`ME2
+INSCC6eWFC>1P;GbG8jE=j2
 R3
-!s105 TopLevel_tb_sv_unit
+!s105 top_test_f2i_sv_unit
 S1
 R0
-w1543831496
-8C:/Users/Omar/Documents/CSE 141L project/TopLevel_tb.sv
-FC:/Users/Omar/Documents/CSE 141L project/TopLevel_tb.sv
-L0 7
+w1544417226
+8C:/Users/Omar/Documents/CSE 141L project/top_test_f2i.sv
+FC:/Users/Omar/Documents/CSE 141L project/top_test_f2i.sv
+L0 4
 R7
 r1
 !s85 0
 31
-R32
-!s107 C:/Users/Omar/Documents/CSE 141L project/TopLevel_tb.sv|
-!s90 -reportprogress|300|-work|work|C:/Users/Omar/Documents/CSE 141L project/TopLevel_tb.sv|
+!s108 1544426079.000000
+!s107 C:/Users/Omar/Documents/CSE 141L project/top_test_f2i.sv|
+!s90 -reportprogress|300|-work|work|C:/Users/Omar/Documents/CSE 141L project/top_test_f2i.sv|
 !i113 1
-R11
-R12
-n@top@level_tb
+R20
+R13

@@ -5,10 +5,10 @@ module pc (
   input        [2:0] op, 		 // opcodes
   input              z,		     // zero flag from ALU
   input			[7:0]	rslt,
-  input signed [7:0] bamt,		 // how far/where to jump or branch
+  input        [7:0] bamt,		 // how far/where to jump or branch
   input              clk,	     // clk -- PC advances and memory/reg_file writes are clocked 
   input              reset,		 // overrides all else, forces PC to 0 (start of program)
-  output logic [7:0] PC);		 // program count
+  output logic [8:0] PC);		 // program count
 
   //assign jump = z && op==kBNE;	 
 

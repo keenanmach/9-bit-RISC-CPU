@@ -45,7 +45,10 @@ module Lab4_tb                  ;
   assign pre_length[3] = 12         ; 	  // program 3 run
 
   int lk;								  // counts leading spaces for program 3
-  top_level dut(.*)            ;          // your top level design goes here 
+  top dut(
+	.clk(clk),
+	.reset(init),
+	.done(done))          ;          // your top level design goes here 
 
   initial begin
     for(lk = 0; lk<55; lk++)

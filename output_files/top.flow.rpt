@@ -1,5 +1,5 @@
 Flow report for top
-Mon Dec 03 12:14:59 2018
+Mon Dec 10 02:15:41 2018
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -40,16 +40,16 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Flow Summary                                                                    ;
 +-----------------------------------+---------------------------------------------+
-; Flow Status                       ; Successful - Mon Dec 03 12:14:59 2018       ;
+; Flow Status                       ; Successful - Mon Dec 10 02:15:41 2018       ;
 ; Quartus Prime Version             ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                     ; top                                         ;
 ; Top-level Entity Name             ; top                                         ;
 ; Family                            ; Arria II GX                                 ;
 ; Logic utilization                 ; N/A                                         ;
-;     Combinational ALUTs           ; 1,238                                       ;
+;     Combinational ALUTs           ; 1,278                                       ;
 ;     Memory ALUTs                  ; 0                                           ;
-;     Dedicated logic registers     ; 2,120                                       ;
-; Total registers                   ; 2120                                        ;
+;     Dedicated logic registers     ; 2,121                                       ;
+; Total registers                   ; 2121                                        ;
 ; Total pins                        ; 3                                           ;
 ; Total virtual pins                ; 0                                           ;
 ; Total block memory bits           ; 0                                           ;
@@ -68,7 +68,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 12/03/2018 12:14:49 ;
+; Start date & time ; 12/10/2018 02:15:24 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; top                 ;
 +-------------------+---------------------+
@@ -79,7 +79,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 123719796339659.154386808913712        ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 123719796339659.154443692413756        ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Systemverilog Hdl                      ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (SystemVerilog)        ; <None>        ; --          ; --             ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --             ;
@@ -99,8 +99,8 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:10     ; 1.0                     ; 4889 MB             ; 00:00:18                           ;
-; Total                ; 00:00:10     ; --                      ; --                  ; 00:00:18                           ;
+; Analysis & Synthesis ; 00:00:17     ; 1.0                     ; 4891 MB             ; 00:00:19                           ;
+; Total                ; 00:00:17     ; --                      ; --                  ; 00:00:19                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

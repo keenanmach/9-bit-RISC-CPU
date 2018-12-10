@@ -68,7 +68,7 @@ r_instr = {'and', 'add', 'xor', 'str', 'ldm', 'bne'}
 i_instr = {'ldi', 'lsl', 'lsr'}
 p_instr = {'addi', 'ldr', 'ldz', 'mov'}
 
-asmfile = 'fix2float.asm'
+asmfile = 'float2fix.asm'
 
 # immediate to decimal
 def imm_to_decimal(imm):

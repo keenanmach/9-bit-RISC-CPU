@@ -53,20 +53,23 @@ set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "SYSTEMVERILOG HDL" -section_
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name SYSTEMVERILOG_FILE TopLevel_tb.sv
+set_global_assignment -name SYSTEMVERILOG_FILE top_test_f2i.sv
+set_global_assignment -name SYSTEMVERILOG_FILE int2flt_tb.sv
+set_global_assignment -name SYSTEMVERILOG_FILE int2flt.sv
+set_global_assignment -name SYSTEMVERILOG_FILE flt2int_tb.sv
+set_global_assignment -name SYSTEMVERILOG_FILE decrypt_tb.sv
+set_global_assignment -name SYSTEMVERILOG_FILE data_mem.sv
+set_global_assignment -name SYSTEMVERILOG_FILE encrypt_tb.sv
 set_global_assignment -name SYSTEMVERILOG_FILE top.sv
-set_global_assignment -name SYSTEMVERILOG_FILE test_bench.sv
 set_global_assignment -name SYSTEMVERILOG_FILE rf.sv
 set_global_assignment -name SYSTEMVERILOG_FILE pc.sv
-set_global_assignment -name SYSTEMVERILOG_FILE lut_pc.sv
-set_global_assignment -name SYSTEMVERILOG_FILE lut_m.sv
-set_global_assignment -name SYSTEMVERILOG_FILE ls_dec.sv
 set_global_assignment -name SYSTEMVERILOG_FILE imem.sv
-set_global_assignment -name SYSTEMVERILOG_FILE dmem.sv
 set_global_assignment -name SYSTEMVERILOG_FILE definitions.sv
 set_global_assignment -name SYSTEMVERILOG_FILE alu.sv
 set_global_assignment -name SYSTEMVERILOG_FILE ctrl_dec.sv
 set_global_assignment -name SYSTEMVERILOG_FILE alu_tb.sv
-set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
-set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_global_assignment -name SYSTEMVERILOG_FILE ctrl_dec_tb.sv
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

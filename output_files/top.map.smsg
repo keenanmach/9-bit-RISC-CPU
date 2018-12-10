@@ -1,1 +1,4 @@
+Info (10281): Verilog HDL Declaration information at int2flt.sv(5): object "clk" differs only in case from object "CLK" in the same scope File: C:/Users/Omar/Documents/CSE 141L project/int2flt.sv Line: 5
+Info (10281): Verilog HDL Declaration information at decrypt_tb.sv(14): object "lfsr_ptrn" differs only in case from object "LFSR_ptrn" in the same scope File: C:/Users/Omar/Documents/CSE 141L project/decrypt_tb.sv Line: 14
 Warning (10273): Verilog HDL warning at data_mem.sv(31): extended using "x" or "z" File: C:/Users/Omar/Documents/CSE 141L project/data_mem.sv Line: 31
+Info (10281): Verilog HDL Declaration information at encrypt_tb.sv(11): object "lfsr_ptrn" differs only in case from object "LFSR_ptrn" in the same scope File: C:/Users/Omar/Documents/CSE 141L project/encrypt_tb.sv Line: 11
