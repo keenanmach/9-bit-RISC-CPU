@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[32]:
+# In[17]:
 
 
 # max immediate loadable from ldi
@@ -68,7 +68,7 @@ r_instr = {'and', 'add', 'xor', 'str', 'ldm', 'bne'}
 i_instr = {'ldi', 'lsl', 'lsr'}
 p_instr = {'addi', 'ldr', 'ldz', 'mov'}
 
-asmfile = 'float2fix.asm'
+asmfile = 'encrypter.asm'
 
 # immediate to decimal
 def imm_to_decimal(imm):
@@ -115,7 +115,8 @@ def convert_p_instr(op, rest, label=False):
             # instr_list = [ldi 31, add reg, lr]
             instr_list = [convert_i_instr('ldi', str(MAX_IMM)),
                          convert_r_instr('add', reg, 'lr')]
-            while imm > MAX_IMM:
+            imm = imm - MAX_IMM
+            while imm >= MAX_IMM:
                 # instr_list += add reg, lr
                 instr_list.append(convert_r_instr('add', reg, 'lr'))
                 imm = imm - MAX_IMM
@@ -188,9 +189,9 @@ for i in range(len(lines)):
     split_line = line.strip().replace('//', ';').split(';')
     instr = split_line[0].lower().strip().replace(',','').split()
     if len(split_line) > 1:
-        comment = ' //' + split_line[0] + split_line[1]
+        comment = ' //' + split_line[1]
     else:
-        comment = ' //' + split_line[0]
+        comment = None
     
     if len(instr) == 0:
         pass
@@ -209,14 +210,14 @@ for i in range(len(lines)):
 for i in range(len(machinecode)):
     if isinstance(machinecode[i][0], list):
         labels[machinecode[i][0][0]] = None
-
+        
 final_machinecode = []
 final_comments = []
 
 for line, comment in machinecode:
     if line is None:
         if comment is None:
-            continue
+            pass
         else:
             final_machinecode.append((line, comment))
     elif isinstance(line, list):
@@ -226,13 +227,13 @@ for line, comment in machinecode:
             final_machinecode.extend([(line, comment)] + [('nop', None)]*6)
         else:
             final_machinecode.append((line, comment))
-        
+            
 # set label values
 non_label_instr_count = 0
 codes = {}
 for i in range(len(final_machinecode)):
     if final_machinecode[i][0] is None:
-        pass
+        continue
     if isinstance(final_machinecode[i][0], list):
         labels[final_machinecode[i][0][0]] = non_label_instr_count
     else:
@@ -265,10 +266,4 @@ with open(asmfile+'.mcode', 'w') as wf:
                 wf.write(comment)
             wf.write('\n')
             i+=1
-
-
-# In[ ]:
-
-
-
 
