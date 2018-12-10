@@ -12,47 +12,47 @@
 # 
 # vlog -sv -work work +incdir+C:/Users/Omar/Documents/CSE\ 141L\ project {C:/Users/Omar/Documents/CSE 141L project/rf.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:11:13 on Dec 03,2018
+# Start time: 20:50:30 on Dec 09,2018
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Omar/Documents/CSE 141L project" C:/Users/Omar/Documents/CSE 141L project/rf.sv 
 # -- Compiling module rf
 # 
 # Top level modules:
 # 	rf
-# End time: 12:11:13 on Dec 03,2018, Elapsed time: 0:00:00
+# End time: 20:50:30 on Dec 09,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Omar/Documents/CSE\ 141L\ project {C:/Users/Omar/Documents/CSE 141L project/imem.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:11:13 on Dec 03,2018
+# Start time: 20:50:30 on Dec 09,2018
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Omar/Documents/CSE 141L project" C:/Users/Omar/Documents/CSE 141L project/imem.sv 
 # -- Compiling module imem
 # 
 # Top level modules:
 # 	imem
-# End time: 12:11:13 on Dec 03,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/Omar/Documents/CSE\ 141L\ project {C:/Users/Omar/Documents/CSE 141L project/dmem.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:11:13 on Dec 03,2018
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Omar/Documents/CSE 141L project" C:/Users/Omar/Documents/CSE 141L project/dmem.sv 
-# -- Compiling module dmem
-# 
-# Top level modules:
-# 	dmem
-# End time: 12:11:13 on Dec 03,2018, Elapsed time: 0:00:00
+# End time: 20:50:30 on Dec 09,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Omar/Documents/CSE\ 141L\ project {C:/Users/Omar/Documents/CSE 141L project/definitions.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:11:13 on Dec 03,2018
+# Start time: 20:50:30 on Dec 09,2018
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Omar/Documents/CSE 141L project" C:/Users/Omar/Documents/CSE 141L project/definitions.sv 
 # -- Compiling package definitions
 # 
 # Top level modules:
 # 	--none--
-# End time: 12:11:13 on Dec 03,2018, Elapsed time: 0:00:00
+# End time: 20:50:30 on Dec 09,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Omar/Documents/CSE\ 141L\ project {C:/Users/Omar/Documents/CSE 141L project/data_mem.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:50:30 on Dec 09,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Omar/Documents/CSE 141L project" C:/Users/Omar/Documents/CSE 141L project/data_mem.sv 
+# -- Compiling module data_mem
+# 
+# Top level modules:
+# 	data_mem
+# End time: 20:50:30 on Dec 09,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Omar/Documents/CSE\ 141L\ project {C:/Users/Omar/Documents/CSE 141L project/pc.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:11:13 on Dec 03,2018
+# Start time: 20:50:30 on Dec 09,2018
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Omar/Documents/CSE 141L project" C:/Users/Omar/Documents/CSE 141L project/pc.sv 
 # -- Compiling package pc_sv_unit
 # -- Importing package definitions
@@ -60,11 +60,11 @@
 # 
 # Top level modules:
 # 	pc
-# End time: 12:11:13 on Dec 03,2018, Elapsed time: 0:00:00
+# End time: 20:50:30 on Dec 09,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Omar/Documents/CSE\ 141L\ project {C:/Users/Omar/Documents/CSE 141L project/alu.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:11:13 on Dec 03,2018
+# Start time: 20:50:30 on Dec 09,2018
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Omar/Documents/CSE 141L project" C:/Users/Omar/Documents/CSE 141L project/alu.sv 
 # -- Compiling package alu_sv_unit
 # -- Importing package definitions
@@ -72,11 +72,11 @@
 # 
 # Top level modules:
 # 	alu
-# End time: 12:11:13 on Dec 03,2018, Elapsed time: 0:00:00
+# End time: 20:50:30 on Dec 09,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Omar/Documents/CSE\ 141L\ project {C:/Users/Omar/Documents/CSE 141L project/ctrl_dec.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:11:13 on Dec 03,2018
+# Start time: 20:50:30 on Dec 09,2018
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Omar/Documents/CSE 141L project" C:/Users/Omar/Documents/CSE 141L project/ctrl_dec.sv 
 # -- Compiling package ctrl_dec_sv_unit
 # -- Importing package definitions
@@ -84,11 +84,11 @@
 # 
 # Top level modules:
 # 	ctrl_dec
-# End time: 12:11:13 on Dec 03,2018, Elapsed time: 0:00:00
+# End time: 20:50:30 on Dec 09,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Omar/Documents/CSE\ 141L\ project {C:/Users/Omar/Documents/CSE 141L project/top.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:11:13 on Dec 03,2018
+# Start time: 20:50:30 on Dec 09,2018
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Omar/Documents/CSE 141L project" C:/Users/Omar/Documents/CSE 141L project/top.sv 
 # -- Compiling package top_sv_unit
 # -- Importing package definitions
@@ -96,363 +96,62 @@
 # 
 # Top level modules:
 # 	top
-# End time: 12:11:13 on Dec 03,2018, Elapsed time: 0:00:00
+# End time: 20:50:30 on Dec 09,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-vlog -reportprogress 300 -work work {C:/Users/Omar/Documents/CSE 141L project/alu.sv}
+vlog -reportprogress 300 -work work {C:/Users/Omar/Documents/CSE 141L project/flt2int_tb.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:11:33 on Dec 03,2018
-# vlog -reportprogress 300 -work work C:/Users/Omar/Documents/CSE 141L project/alu.sv 
-# ** Warning: C:/Users/Omar/Documents/CSE 141L project/alu.sv(3): (vlog-13233) Design unit "alu_sv_unit" already exists and will be overwritten. Design unit compiled with different set of options.
-# -- Compiling package alu_sv_unit
-# -- Importing package definitions
-# -- Compiling module alu
+# Start time: 20:50:50 on Dec 09,2018
+# vlog -reportprogress 300 -work work C:/Users/Omar/Documents/CSE 141L project/flt2int_tb.sv 
+# -- Compiling module flt2int_tb
 # 
 # Top level modules:
-# 	alu
-# End time: 12:11:33 on Dec 03,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 1
-vlog -reportprogress 300 -work work {C:/Users/Omar/Documents/CSE 141L project/alu_tb.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:11:33 on Dec 03,2018
-# vlog -reportprogress 300 -work work C:/Users/Omar/Documents/CSE 141L project/alu_tb.sv 
-# -- Compiling package alu_tb_sv_unit
-# -- Importing package definitions
-# -- Compiling module alu_tb
-# 
-# Top level modules:
-# 	alu_tb
-# End time: 12:11:33 on Dec 03,2018, Elapsed time: 0:00:00
+# 	flt2int_tb
+# End time: 20:50:50 on Dec 09,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work {C:/Users/Omar/Documents/CSE 141L project/ctrl_dec.sv}
+vlog -reportprogress 300 -work work {C:/Users/Omar/Documents/CSE 141L project/flt2int_tb.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:11:33 on Dec 03,2018
-# vlog -reportprogress 300 -work work C:/Users/Omar/Documents/CSE 141L project/ctrl_dec.sv 
-# ** Warning: C:/Users/Omar/Documents/CSE 141L project/ctrl_dec.sv(4): (vlog-13233) Design unit "ctrl_dec_sv_unit" already exists and will be overwritten. Design unit compiled with different set of options.
-# -- Compiling package ctrl_dec_sv_unit
-# -- Importing package definitions
-# -- Compiling module ctrl_dec
+# Start time: 20:50:51 on Dec 09,2018
+# vlog -reportprogress 300 -work work C:/Users/Omar/Documents/CSE 141L project/flt2int_tb.sv 
+# -- Compiling module flt2int_tb
 # 
 # Top level modules:
-# 	ctrl_dec
-# End time: 12:11:33 on Dec 03,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 1
-vlog -reportprogress 300 -work work {C:/Users/Omar/Documents/CSE 141L project/ctrl_dec_tb.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:11:33 on Dec 03,2018
-# vlog -reportprogress 300 -work work C:/Users/Omar/Documents/CSE 141L project/ctrl_dec_tb.sv 
-# -- Compiling package ctrl_dec_tb_sv_unit
-# -- Importing package definitions
-# -- Compiling module ctrl_dec_tb
-# 
-# Top level modules:
-# 	ctrl_dec_tb
-# End time: 12:11:33 on Dec 03,2018, Elapsed time: 0:00:00
+# 	flt2int_tb
+# End time: 20:50:51 on Dec 09,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work {C:/Users/Omar/Documents/CSE 141L project/definitions.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:11:33 on Dec 03,2018
-# vlog -reportprogress 300 -work work C:/Users/Omar/Documents/CSE 141L project/definitions.sv 
-# -- Compiling package definitions
-# 
-# Top level modules:
-# 	--none--
-# End time: 12:11:33 on Dec 03,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work {C:/Users/Omar/Documents/CSE 141L project/dmem.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:11:33 on Dec 03,2018
-# vlog -reportprogress 300 -work work C:/Users/Omar/Documents/CSE 141L project/dmem.sv 
-# -- Compiling module dmem
-# 
-# Top level modules:
-# 	dmem
-# End time: 12:11:33 on Dec 03,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work {C:/Users/Omar/Documents/CSE 141L project/imem.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:11:33 on Dec 03,2018
-# vlog -reportprogress 300 -work work C:/Users/Omar/Documents/CSE 141L project/imem.sv 
-# -- Compiling module imem
-# 
-# Top level modules:
-# 	imem
-# End time: 12:11:33 on Dec 03,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work {C:/Users/Omar/Documents/CSE 141L project/ls_dec.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:11:33 on Dec 03,2018
-# vlog -reportprogress 300 -work work C:/Users/Omar/Documents/CSE 141L project/ls_dec.sv 
-# -- Compiling package ls_dec_sv_unit
-# -- Importing package definitions
-# -- Compiling module ls_dec
-# 
-# Top level modules:
-# 	ls_dec
-# End time: 12:11:33 on Dec 03,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work {C:/Users/Omar/Documents/CSE 141L project/lut_m.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:11:33 on Dec 03,2018
-# vlog -reportprogress 300 -work work C:/Users/Omar/Documents/CSE 141L project/lut_m.sv 
-# -- Compiling module lut_m
-# ** Error: C:/Users/Omar/Documents/CSE 141L project/lut_m.sv(15): (vlog-2730) Undefined variable: 'kLDM'.
-# ** Error: C:/Users/Omar/Documents/CSE 141L project/lut_m.sv(16): (vlog-2730) Undefined variable: 'kSTR'.
-# End time: 12:11:33 on Dec 03,2018, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vlog -reportprogress 300 -work work {C:/Users/Omar/Documents/CSE 141L project/lut_pc.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:11:33 on Dec 03,2018
-# vlog -reportprogress 300 -work work C:/Users/Omar/Documents/CSE 141L project/lut_pc.sv 
-# -- Compiling module lut_pc
-# 
-# Top level modules:
-# 	lut_pc
-# End time: 12:11:34 on Dec 03,2018, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work {C:/Users/Omar/Documents/CSE 141L project/pc.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:11:34 on Dec 03,2018
-# vlog -reportprogress 300 -work work C:/Users/Omar/Documents/CSE 141L project/pc.sv 
-# ** Warning: C:/Users/Omar/Documents/CSE 141L project/pc.sv(3): (vlog-13233) Design unit "pc_sv_unit" already exists and will be overwritten. Design unit compiled with different set of options.
-# -- Compiling package pc_sv_unit
-# -- Importing package definitions
-# -- Compiling module pc
-# 
-# Top level modules:
-# 	pc
-# End time: 12:11:34 on Dec 03,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 1
-vlog -reportprogress 300 -work work {C:/Users/Omar/Documents/CSE 141L project/rf.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:11:34 on Dec 03,2018
-# vlog -reportprogress 300 -work work C:/Users/Omar/Documents/CSE 141L project/rf.sv 
-# -- Compiling module rf
-# 
-# Top level modules:
-# 	rf
-# End time: 12:11:34 on Dec 03,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work {C:/Users/Omar/Documents/CSE 141L project/test_bench.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:11:34 on Dec 03,2018
-# vlog -reportprogress 300 -work work C:/Users/Omar/Documents/CSE 141L project/test_bench.sv 
-# -- Compiling module test_bench
-# 
-# Top level modules:
-# 	test_bench
-# End time: 12:11:34 on Dec 03,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work {C:/Users/Omar/Documents/CSE 141L project/top.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:11:34 on Dec 03,2018
-# vlog -reportprogress 300 -work work C:/Users/Omar/Documents/CSE 141L project/top.sv 
-# ** Warning: C:/Users/Omar/Documents/CSE 141L project/top.sv(3): (vlog-13233) Design unit "top_sv_unit" already exists and will be overwritten. Design unit compiled with different set of options.
-# -- Compiling package top_sv_unit
-# -- Importing package definitions
-# -- Compiling module top
-# 
-# Top level modules:
-# 	top
-# End time: 12:11:34 on Dec 03,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 1
-vlog -reportprogress 300 -work work {C:/Users/Omar/Documents/CSE 141L project/TopLevel_tb.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:11:34 on Dec 03,2018
-# vlog -reportprogress 300 -work work C:/Users/Omar/Documents/CSE 141L project/TopLevel_tb.sv 
-# -- Compiling module TopLevel_tb
-# ** Warning: C:/Users/Omar/Documents/CSE 141L project/TopLevel_tb.sv(50): (vlog-2643) Unterminated string literal continues onto next line.
-# 
-# Top level modules:
-# 	TopLevel_tb
-# End time: 12:11:34 on Dec 03,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 1
-vsim work.TopLevel_tb
-# vsim work.TopLevel_tb 
-# Start time: 12:11:36 on Dec 03,2018
+vsim work.flt2int_tb
+# vsim work.flt2int_tb 
+# Start time: 20:50:57 on Dec 09,2018
 # Loading sv_std.std
-# Loading work.TopLevel_tb
+# Loading work.flt2int_tb
+# ** Error: (vsim-3033) C:/Users/Omar/Documents/CSE 141L project/flt2int_tb.sv(23): Instantiation of 'top_test_f2i' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /flt2int_tb File: C:/Users/Omar/Documents/CSE 141L project/flt2int_tb.sv
+#         Searched libraries:
+#             C:/Users/Omar/Documents/CSE 141L project/simulation/modelsim/rtl_work
 # Loading work.definitions
 # Loading work.top_sv_unit
 # Loading work.top
 # Loading work.pc_sv_unit
 # Loading work.pc
 # Loading work.imem
-# ** Error: (vsim-13) Recompile work.ctrl_dec_sv_unit because work.definitions has changed.
-# ** Error (suppressible): (vsim-12) Recompile work.ctrl_dec after work.ctrl_dec_sv_unit is recompiled.
-# ** Error: (vsim-13) Recompile work.ctrl_dec because work.definitions has changed.
+# Loading work.ctrl_dec_sv_unit
+# Loading work.ctrl_dec
+# Loading work.rf
+# Loading work.alu_sv_unit
+# Loading work.alu
+# Loading work.data_mem
 # Error loading design
-# End time: 12:11:37 on Dec 03,2018, Elapsed time: 0:00:01
-# Errors: 3, Warnings: 0
-vlog -reportprogress 300 -work work {C:/Users/Omar/Documents/CSE 141L project/alu.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:11:55 on Dec 03,2018
-# vlog -reportprogress 300 -work work C:/Users/Omar/Documents/CSE 141L project/alu.sv 
-# -- Compiling package alu_sv_unit
-# -- Importing package definitions
-# -- Compiling module alu
-# 
-# Top level modules:
-# 	alu
-# End time: 12:11:55 on Dec 03,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work {C:/Users/Omar/Documents/CSE 141L project/alu_tb.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:11:55 on Dec 03,2018
-# vlog -reportprogress 300 -work work C:/Users/Omar/Documents/CSE 141L project/alu_tb.sv 
-# -- Compiling package alu_tb_sv_unit
-# -- Importing package definitions
-# -- Compiling module alu_tb
-# 
-# Top level modules:
-# 	alu_tb
-# End time: 12:11:55 on Dec 03,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work {C:/Users/Omar/Documents/CSE 141L project/ctrl_dec.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:11:55 on Dec 03,2018
-# vlog -reportprogress 300 -work work C:/Users/Omar/Documents/CSE 141L project/ctrl_dec.sv 
-# -- Compiling package ctrl_dec_sv_unit
-# -- Importing package definitions
-# -- Compiling module ctrl_dec
-# 
-# Top level modules:
-# 	ctrl_dec
-# End time: 12:11:55 on Dec 03,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work {C:/Users/Omar/Documents/CSE 141L project/ctrl_dec_tb.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:11:55 on Dec 03,2018
-# vlog -reportprogress 300 -work work C:/Users/Omar/Documents/CSE 141L project/ctrl_dec_tb.sv 
-# -- Compiling package ctrl_dec_tb_sv_unit
-# -- Importing package definitions
-# -- Compiling module ctrl_dec_tb
-# 
-# Top level modules:
-# 	ctrl_dec_tb
-# End time: 12:11:55 on Dec 03,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work {C:/Users/Omar/Documents/CSE 141L project/definitions.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:11:55 on Dec 03,2018
-# vlog -reportprogress 300 -work work C:/Users/Omar/Documents/CSE 141L project/definitions.sv 
-# -- Compiling package definitions
-# 
-# Top level modules:
-# 	--none--
-# End time: 12:11:55 on Dec 03,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work {C:/Users/Omar/Documents/CSE 141L project/dmem.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:11:55 on Dec 03,2018
-# vlog -reportprogress 300 -work work C:/Users/Omar/Documents/CSE 141L project/dmem.sv 
-# -- Compiling module dmem
-# 
-# Top level modules:
-# 	dmem
-# End time: 12:11:55 on Dec 03,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work {C:/Users/Omar/Documents/CSE 141L project/imem.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:11:55 on Dec 03,2018
-# vlog -reportprogress 300 -work work C:/Users/Omar/Documents/CSE 141L project/imem.sv 
-# -- Compiling module imem
-# 
-# Top level modules:
-# 	imem
-# End time: 12:11:55 on Dec 03,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work {C:/Users/Omar/Documents/CSE 141L project/ls_dec.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:11:56 on Dec 03,2018
-# vlog -reportprogress 300 -work work C:/Users/Omar/Documents/CSE 141L project/ls_dec.sv 
-# -- Compiling package ls_dec_sv_unit
-# -- Importing package definitions
-# -- Compiling module ls_dec
-# 
-# Top level modules:
-# 	ls_dec
-# End time: 12:11:56 on Dec 03,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work {C:/Users/Omar/Documents/CSE 141L project/lut_m.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:11:56 on Dec 03,2018
-# vlog -reportprogress 300 -work work C:/Users/Omar/Documents/CSE 141L project/lut_m.sv 
-# -- Compiling module lut_m
-# ** Error: C:/Users/Omar/Documents/CSE 141L project/lut_m.sv(15): (vlog-2730) Undefined variable: 'kLDM'.
-# ** Error: C:/Users/Omar/Documents/CSE 141L project/lut_m.sv(16): (vlog-2730) Undefined variable: 'kSTR'.
-# End time: 12:11:56 on Dec 03,2018, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vlog -reportprogress 300 -work work {C:/Users/Omar/Documents/CSE 141L project/lut_pc.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:11:56 on Dec 03,2018
-# vlog -reportprogress 300 -work work C:/Users/Omar/Documents/CSE 141L project/lut_pc.sv 
-# -- Compiling module lut_pc
-# 
-# Top level modules:
-# 	lut_pc
-# End time: 12:11:56 on Dec 03,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work {C:/Users/Omar/Documents/CSE 141L project/pc.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:11:56 on Dec 03,2018
-# vlog -reportprogress 300 -work work C:/Users/Omar/Documents/CSE 141L project/pc.sv 
-# -- Compiling package pc_sv_unit
-# -- Importing package definitions
-# -- Compiling module pc
-# 
-# Top level modules:
-# 	pc
-# End time: 12:11:56 on Dec 03,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work {C:/Users/Omar/Documents/CSE 141L project/rf.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:11:56 on Dec 03,2018
-# vlog -reportprogress 300 -work work C:/Users/Omar/Documents/CSE 141L project/rf.sv 
-# -- Compiling module rf
-# 
-# Top level modules:
-# 	rf
-# End time: 12:11:56 on Dec 03,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work {C:/Users/Omar/Documents/CSE 141L project/test_bench.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:11:56 on Dec 03,2018
-# vlog -reportprogress 300 -work work C:/Users/Omar/Documents/CSE 141L project/test_bench.sv 
-# -- Compiling module test_bench
-# 
-# Top level modules:
-# 	test_bench
-# End time: 12:11:56 on Dec 03,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work {C:/Users/Omar/Documents/CSE 141L project/top.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:11:56 on Dec 03,2018
-# vlog -reportprogress 300 -work work C:/Users/Omar/Documents/CSE 141L project/top.sv 
-# -- Compiling package top_sv_unit
-# -- Importing package definitions
-# -- Compiling module top
-# 
-# Top level modules:
-# 	top
-# End time: 12:11:56 on Dec 03,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work {C:/Users/Omar/Documents/CSE 141L project/TopLevel_tb.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:11:56 on Dec 03,2018
-# vlog -reportprogress 300 -work work C:/Users/Omar/Documents/CSE 141L project/TopLevel_tb.sv 
-# -- Compiling module TopLevel_tb
-# ** Warning: C:/Users/Omar/Documents/CSE 141L project/TopLevel_tb.sv(50): (vlog-2643) Unterminated string literal continues onto next line.
-# 
-# Top level modules:
-# 	TopLevel_tb
-# End time: 12:11:56 on Dec 03,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 1
-vsim work.TopLevel_tb
-# vsim work.TopLevel_tb 
-# Start time: 12:11:59 on Dec 03,2018
+vsim work.flt2int_tb
+# End time: 20:50:57 on Dec 09,2018, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# vsim work.flt2int_tb 
+# Start time: 20:50:57 on Dec 09,2018
 # Loading sv_std.std
-# Loading work.TopLevel_tb
+# Loading work.flt2int_tb
+# ** Error: (vsim-3033) C:/Users/Omar/Documents/CSE 141L project/flt2int_tb.sv(23): Instantiation of 'top_test_f2i' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /flt2int_tb File: C:/Users/Omar/Documents/CSE 141L project/flt2int_tb.sv
+#         Searched libraries:
+#             C:/Users/Omar/Documents/CSE 141L project/simulation/modelsim/rtl_work
 # Loading work.definitions
 # Loading work.top_sv_unit
 # Loading work.top
@@ -464,437 +163,19 @@ vsim work.TopLevel_tb
 # Loading work.rf
 # Loading work.alu_sv_unit
 # Loading work.alu
-# Loading work.dmem
-run -all
-#  r0 =   0 
-#  r1 =   0 
-#  r2 =   0 
-#  r3 =   0 
-#  
-# 
-# r4 =   0 
-#  r5 =   0 
-#  r6 =   0 
-#  r7 =   0 
-#  PC =   0
-#  INSTR = 100000110
-# 
-#  r0 =   0 
-#  r1 =   6 
-#  r2 =   0 
-#  r3 =   0 
-#  
-# 
-# r4 =   0 
-#  r5 =   0 
-#  r6 =   0 
-#  r7 =   0 
-#  PC =   0
-#  INSTR = 100000110
-# 
-#  r0 =   0 
-#  r1 =   6 
-#  r2 =   0 
-#  r3 =   0 
-#  
-# 
-# r4 =   0 
-#  r5 =   0 
-#  r6 =   0 
-#  r7 =   0 
-#  PC =   1
-#  INSTR = 001001001
-# 
-#  r0 =   0 
-#  r1 =  12 
-#  r2 =   0 
-#  r3 =   0 
-#  
-# 
-# r4 =   0 
-#  r5 =   0 
-#  r6 =   0 
-#  r7 =   0 
-#  PC =   2
-#  INSTR = 001101001
-# 
-#  r0 =   0 
-#  r1 =  12 
-#  r2 =   0 
-#  r3 =   0 
-#  
-# 
-# r4 =   0 
-#  r5 =  12 
-#  r6 =   0 
-#  r7 =   0 
-#  PC =   3
-#  INSTR = 011010111
-# 
-#  r0 =   0 
-#  r1 =  12 
-#  r2 =   0 
-#  r3 =   0 
-#  
-# 
-# r4 =   0 
-#  r5 = 192 
-#  r6 =   0 
-#  r7 =   0 
-#  PC =   4
-#  INSTR = 111101001
-# 
-#  r0 =   0 
-#  r1 =  12 
-#  r2 =   0 
-#  r3 =   0 
-#  
-# 
-# r4 =   0 
-#  r5 = 192 
-#  r6 =   0 
-#  r7 =   0 
-#  PC =  12
-#  INSTR = 111111111
-# 
-# ** Note: $stop    : C:/Users/Omar/Documents/CSE 141L project/TopLevel_tb.sv(43)
-#    Time: 75 ns  Iteration: 0  Instance: /TopLevel_tb
-# Break in Module TopLevel_tb at C:/Users/Omar/Documents/CSE 141L project/TopLevel_tb.sv line 43
-vlog -reportprogress 300 -work work {C:/Users/Omar/Documents/CSE 141L project/alu.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:15:08 on Dec 03,2018
-# vlog -reportprogress 300 -work work C:/Users/Omar/Documents/CSE 141L project/alu.sv 
-# -- Compiling package alu_sv_unit
-# -- Importing package definitions
-# -- Compiling module alu
-# 
-# Top level modules:
-# 	alu
-# End time: 12:15:08 on Dec 03,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work {C:/Users/Omar/Documents/CSE 141L project/alu_tb.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:15:08 on Dec 03,2018
-# vlog -reportprogress 300 -work work C:/Users/Omar/Documents/CSE 141L project/alu_tb.sv 
-# -- Compiling package alu_tb_sv_unit
-# -- Importing package definitions
-# -- Compiling module alu_tb
-# 
-# Top level modules:
-# 	alu_tb
-# End time: 12:15:08 on Dec 03,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work {C:/Users/Omar/Documents/CSE 141L project/ctrl_dec.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:15:08 on Dec 03,2018
-# vlog -reportprogress 300 -work work C:/Users/Omar/Documents/CSE 141L project/ctrl_dec.sv 
-# -- Compiling package ctrl_dec_sv_unit
-# -- Importing package definitions
-# -- Compiling module ctrl_dec
-# 
-# Top level modules:
-# 	ctrl_dec
-# End time: 12:15:08 on Dec 03,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work {C:/Users/Omar/Documents/CSE 141L project/ctrl_dec_tb.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:15:08 on Dec 03,2018
-# vlog -reportprogress 300 -work work C:/Users/Omar/Documents/CSE 141L project/ctrl_dec_tb.sv 
-# -- Compiling package ctrl_dec_tb_sv_unit
-# -- Importing package definitions
-# -- Compiling module ctrl_dec_tb
-# 
-# Top level modules:
-# 	ctrl_dec_tb
-# End time: 12:15:08 on Dec 03,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work {C:/Users/Omar/Documents/CSE 141L project/definitions.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:15:08 on Dec 03,2018
-# vlog -reportprogress 300 -work work C:/Users/Omar/Documents/CSE 141L project/definitions.sv 
-# -- Compiling package definitions
-# 
-# Top level modules:
-# 	--none--
-# End time: 12:15:08 on Dec 03,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work {C:/Users/Omar/Documents/CSE 141L project/dmem.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:15:08 on Dec 03,2018
-# vlog -reportprogress 300 -work work C:/Users/Omar/Documents/CSE 141L project/dmem.sv 
-# -- Compiling module dmem
-# 
-# Top level modules:
-# 	dmem
-# End time: 12:15:08 on Dec 03,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work {C:/Users/Omar/Documents/CSE 141L project/imem.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:15:08 on Dec 03,2018
-# vlog -reportprogress 300 -work work C:/Users/Omar/Documents/CSE 141L project/imem.sv 
-# -- Compiling module imem
-# 
-# Top level modules:
-# 	imem
-# End time: 12:15:08 on Dec 03,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work {C:/Users/Omar/Documents/CSE 141L project/ls_dec.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:15:08 on Dec 03,2018
-# vlog -reportprogress 300 -work work C:/Users/Omar/Documents/CSE 141L project/ls_dec.sv 
-# -- Compiling package ls_dec_sv_unit
-# -- Importing package definitions
-# -- Compiling module ls_dec
-# 
-# Top level modules:
-# 	ls_dec
-# End time: 12:15:08 on Dec 03,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work {C:/Users/Omar/Documents/CSE 141L project/lut_m.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:15:08 on Dec 03,2018
-# vlog -reportprogress 300 -work work C:/Users/Omar/Documents/CSE 141L project/lut_m.sv 
-# -- Compiling module lut_m
-# ** Error: C:/Users/Omar/Documents/CSE 141L project/lut_m.sv(15): (vlog-2730) Undefined variable: 'kLDM'.
-# ** Error: C:/Users/Omar/Documents/CSE 141L project/lut_m.sv(16): (vlog-2730) Undefined variable: 'kSTR'.
-# End time: 12:15:08 on Dec 03,2018, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vlog -reportprogress 300 -work work {C:/Users/Omar/Documents/CSE 141L project/lut_pc.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:15:08 on Dec 03,2018
-# vlog -reportprogress 300 -work work C:/Users/Omar/Documents/CSE 141L project/lut_pc.sv 
-# -- Compiling module lut_pc
-# 
-# Top level modules:
-# 	lut_pc
-# End time: 12:15:08 on Dec 03,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work {C:/Users/Omar/Documents/CSE 141L project/pc.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:15:08 on Dec 03,2018
-# vlog -reportprogress 300 -work work C:/Users/Omar/Documents/CSE 141L project/pc.sv 
-# -- Compiling package pc_sv_unit
-# -- Importing package definitions
-# -- Compiling module pc
-# 
-# Top level modules:
-# 	pc
-# End time: 12:15:08 on Dec 03,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work {C:/Users/Omar/Documents/CSE 141L project/rf.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:15:08 on Dec 03,2018
-# vlog -reportprogress 300 -work work C:/Users/Omar/Documents/CSE 141L project/rf.sv 
-# -- Compiling module rf
-# 
-# Top level modules:
-# 	rf
-# End time: 12:15:08 on Dec 03,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work {C:/Users/Omar/Documents/CSE 141L project/test_bench.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:15:08 on Dec 03,2018
-# vlog -reportprogress 300 -work work C:/Users/Omar/Documents/CSE 141L project/test_bench.sv 
-# -- Compiling module test_bench
-# 
-# Top level modules:
-# 	test_bench
-# End time: 12:15:08 on Dec 03,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work {C:/Users/Omar/Documents/CSE 141L project/top.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:15:08 on Dec 03,2018
-# vlog -reportprogress 300 -work work C:/Users/Omar/Documents/CSE 141L project/top.sv 
-# -- Compiling package top_sv_unit
-# -- Importing package definitions
-# -- Compiling module top
-# 
-# Top level modules:
-# 	top
-# End time: 12:15:08 on Dec 03,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work {C:/Users/Omar/Documents/CSE 141L project/TopLevel_tb.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:15:08 on Dec 03,2018
-# vlog -reportprogress 300 -work work C:/Users/Omar/Documents/CSE 141L project/TopLevel_tb.sv 
-# -- Compiling module TopLevel_tb
-# ** Warning: C:/Users/Omar/Documents/CSE 141L project/TopLevel_tb.sv(50): (vlog-2643) Unterminated string literal continues onto next line.
-# 
-# Top level modules:
-# 	TopLevel_tb
-# End time: 12:15:08 on Dec 03,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 1
-vlog -reportprogress 300 -work work {C:/Users/Omar/Documents/CSE 141L project/alu.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:15:09 on Dec 03,2018
-# vlog -reportprogress 300 -work work C:/Users/Omar/Documents/CSE 141L project/alu.sv 
-# -- Compiling package alu_sv_unit
-# -- Importing package definitions
-# -- Compiling module alu
-# 
-# Top level modules:
-# 	alu
-# End time: 12:15:09 on Dec 03,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work {C:/Users/Omar/Documents/CSE 141L project/alu_tb.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:15:09 on Dec 03,2018
-# vlog -reportprogress 300 -work work C:/Users/Omar/Documents/CSE 141L project/alu_tb.sv 
-# -- Compiling package alu_tb_sv_unit
-# -- Importing package definitions
-# -- Compiling module alu_tb
-# 
-# Top level modules:
-# 	alu_tb
-# End time: 12:15:09 on Dec 03,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work {C:/Users/Omar/Documents/CSE 141L project/ctrl_dec.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:15:09 on Dec 03,2018
-# vlog -reportprogress 300 -work work C:/Users/Omar/Documents/CSE 141L project/ctrl_dec.sv 
-# -- Compiling package ctrl_dec_sv_unit
-# -- Importing package definitions
-# -- Compiling module ctrl_dec
-# 
-# Top level modules:
-# 	ctrl_dec
-# End time: 12:15:09 on Dec 03,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work {C:/Users/Omar/Documents/CSE 141L project/ctrl_dec_tb.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:15:09 on Dec 03,2018
-# vlog -reportprogress 300 -work work C:/Users/Omar/Documents/CSE 141L project/ctrl_dec_tb.sv 
-# -- Compiling package ctrl_dec_tb_sv_unit
-# -- Importing package definitions
-# -- Compiling module ctrl_dec_tb
-# 
-# Top level modules:
-# 	ctrl_dec_tb
-# End time: 12:15:09 on Dec 03,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work {C:/Users/Omar/Documents/CSE 141L project/definitions.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:15:09 on Dec 03,2018
-# vlog -reportprogress 300 -work work C:/Users/Omar/Documents/CSE 141L project/definitions.sv 
-# -- Compiling package definitions
-# 
-# Top level modules:
-# 	--none--
-# End time: 12:15:09 on Dec 03,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work {C:/Users/Omar/Documents/CSE 141L project/dmem.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:15:09 on Dec 03,2018
-# vlog -reportprogress 300 -work work C:/Users/Omar/Documents/CSE 141L project/dmem.sv 
-# -- Compiling module dmem
-# 
-# Top level modules:
-# 	dmem
-# End time: 12:15:09 on Dec 03,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work {C:/Users/Omar/Documents/CSE 141L project/imem.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:15:09 on Dec 03,2018
-# vlog -reportprogress 300 -work work C:/Users/Omar/Documents/CSE 141L project/imem.sv 
-# -- Compiling module imem
-# 
-# Top level modules:
-# 	imem
-# End time: 12:15:09 on Dec 03,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work {C:/Users/Omar/Documents/CSE 141L project/ls_dec.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:15:09 on Dec 03,2018
-# vlog -reportprogress 300 -work work C:/Users/Omar/Documents/CSE 141L project/ls_dec.sv 
-# -- Compiling package ls_dec_sv_unit
-# -- Importing package definitions
-# -- Compiling module ls_dec
-# 
-# Top level modules:
-# 	ls_dec
-# End time: 12:15:10 on Dec 03,2018, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work {C:/Users/Omar/Documents/CSE 141L project/lut_m.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:15:10 on Dec 03,2018
-# vlog -reportprogress 300 -work work C:/Users/Omar/Documents/CSE 141L project/lut_m.sv 
-# -- Compiling module lut_m
-# ** Error: C:/Users/Omar/Documents/CSE 141L project/lut_m.sv(15): (vlog-2730) Undefined variable: 'kLDM'.
-# ** Error: C:/Users/Omar/Documents/CSE 141L project/lut_m.sv(16): (vlog-2730) Undefined variable: 'kSTR'.
-# End time: 12:15:10 on Dec 03,2018, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vlog -reportprogress 300 -work work {C:/Users/Omar/Documents/CSE 141L project/lut_pc.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:15:10 on Dec 03,2018
-# vlog -reportprogress 300 -work work C:/Users/Omar/Documents/CSE 141L project/lut_pc.sv 
-# -- Compiling module lut_pc
-# 
-# Top level modules:
-# 	lut_pc
-# End time: 12:15:10 on Dec 03,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work {C:/Users/Omar/Documents/CSE 141L project/pc.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:15:10 on Dec 03,2018
-# vlog -reportprogress 300 -work work C:/Users/Omar/Documents/CSE 141L project/pc.sv 
-# -- Compiling package pc_sv_unit
-# -- Importing package definitions
-# -- Compiling module pc
-# 
-# Top level modules:
-# 	pc
-# End time: 12:15:10 on Dec 03,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work {C:/Users/Omar/Documents/CSE 141L project/rf.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:15:10 on Dec 03,2018
-# vlog -reportprogress 300 -work work C:/Users/Omar/Documents/CSE 141L project/rf.sv 
-# -- Compiling module rf
-# 
-# Top level modules:
-# 	rf
-# End time: 12:15:10 on Dec 03,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work {C:/Users/Omar/Documents/CSE 141L project/test_bench.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:15:10 on Dec 03,2018
-# vlog -reportprogress 300 -work work C:/Users/Omar/Documents/CSE 141L project/test_bench.sv 
-# -- Compiling module test_bench
-# 
-# Top level modules:
-# 	test_bench
-# End time: 12:15:10 on Dec 03,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work {C:/Users/Omar/Documents/CSE 141L project/top.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:15:10 on Dec 03,2018
-# vlog -reportprogress 300 -work work C:/Users/Omar/Documents/CSE 141L project/top.sv 
-# -- Compiling package top_sv_unit
-# -- Importing package definitions
-# -- Compiling module top
-# 
-# Top level modules:
-# 	top
-# End time: 12:15:10 on Dec 03,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work {C:/Users/Omar/Documents/CSE 141L project/TopLevel_tb.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:15:10 on Dec 03,2018
-# vlog -reportprogress 300 -work work C:/Users/Omar/Documents/CSE 141L project/TopLevel_tb.sv 
-# -- Compiling module TopLevel_tb
-# ** Warning: C:/Users/Omar/Documents/CSE 141L project/TopLevel_tb.sv(50): (vlog-2643) Unterminated string literal continues onto next line.
-# 
-# Top level modules:
-# 	TopLevel_tb
-# End time: 12:15:10 on Dec 03,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 1
-vsim work.TopLevel_tb
-# End time: 12:15:21 on Dec 03,2018, Elapsed time: 0:03:22
-# Errors: 4, Warnings: 2
-# vsim work.TopLevel_tb 
-# Start time: 12:15:21 on Dec 03,2018
+# Loading work.data_mem
+# Error loading design
+# End time: 20:50:57 on Dec 09,2018, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vsim work.flt2int_tb
+# vsim work.flt2int_tb 
+# Start time: 20:51:00 on Dec 09,2018
 # Loading sv_std.std
-# Loading work.TopLevel_tb
+# Loading work.flt2int_tb
+# ** Error: (vsim-3033) C:/Users/Omar/Documents/CSE 141L project/flt2int_tb.sv(23): Instantiation of 'top_test_f2i' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /flt2int_tb File: C:/Users/Omar/Documents/CSE 141L project/flt2int_tb.sv
+#         Searched libraries:
+#             C:/Users/Omar/Documents/CSE 141L project/simulation/modelsim/rtl_work
 # Loading work.definitions
 # Loading work.top_sv_unit
 # Loading work.top
@@ -906,166 +187,488 @@ vsim work.TopLevel_tb
 # Loading work.rf
 # Loading work.alu_sv_unit
 # Loading work.alu
-# Loading work.dmem
+# Loading work.data_mem
+# Error loading design
+# End time: 20:51:00 on Dec 09,2018, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vsim work.flt2int_tb
+# vsim work.flt2int_tb 
+# Start time: 20:51:01 on Dec 09,2018
+# Loading sv_std.std
+# Loading work.flt2int_tb
+# ** Error: (vsim-3033) C:/Users/Omar/Documents/CSE 141L project/flt2int_tb.sv(23): Instantiation of 'top_test_f2i' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /flt2int_tb File: C:/Users/Omar/Documents/CSE 141L project/flt2int_tb.sv
+#         Searched libraries:
+#             C:/Users/Omar/Documents/CSE 141L project/simulation/modelsim/rtl_work
+# Loading work.definitions
+# Loading work.top_sv_unit
+# Loading work.top
+# Loading work.pc_sv_unit
+# Loading work.pc
+# Loading work.imem
+# Loading work.ctrl_dec_sv_unit
+# Loading work.ctrl_dec
+# Loading work.rf
+# Loading work.alu_sv_unit
+# Loading work.alu
+# Loading work.data_mem
+# Error loading design
+# End time: 20:51:02 on Dec 09,2018, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+vlog -reportprogress 300 -work work {C:/Users/Omar/Documents/CSE 141L project/top_test_f2i.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:51:14 on Dec 09,2018
+# vlog -reportprogress 300 -work work C:/Users/Omar/Documents/CSE 141L project/top_test_f2i.sv 
+# -- Compiling module top_test_f2i
+# 
+# Top level modules:
+# 	top_test_f2i
+# End time: 20:51:14 on Dec 09,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.flt2int_tb
+# vsim work.flt2int_tb 
+# Start time: 20:51:16 on Dec 09,2018
+# Loading sv_std.std
+# Loading work.flt2int_tb
+# Loading work.top_test_f2i
+# Loading work.data_mem
+# Loading work.definitions
+# Loading work.top_sv_unit
+# Loading work.top
+# Loading work.pc_sv_unit
+# Loading work.pc
+# Loading work.imem
+# Loading work.ctrl_dec_sv_unit
+# Loading work.ctrl_dec
+# Loading work.rf
+# Loading work.alu_sv_unit
+# Loading work.alu
 run -all
-#  r0 =   0 
-#  r1 =   0 
-#  r2 =   0 
-#  r3 =   0 
+# input = 1   10000   1000000100
+# input = -1.5039062500 * 2**  1
+# exp_output = -         3  -00000000000000000000000000000011
+# output = -    X -xxxxxxx11111111
+#     X          3
+# scores =     0     0
 #  
-# 
-# r4 =   0 
-#  r5 =   0 
-#  r6 =   0 
-#  r7 =   0 
-#  PC =   0
-#  INSTR = 100000110
-# 
-#  r0 =   0 
-#  r1 =   6 
-#  r2 =   0 
-#  r3 =   0 
+# input = 1   10010   1000010000
+# input = -1.5156250000 * 2**  3
+# exp_output = -        12  -00000000000000000000000000001100
+# output = -    X -xxxxxxx11111111
+#     X         12
+# scores =     0     0
 #  
-# 
-# r4 =   0 
-#  r5 =   0 
-#  r6 =   0 
-#  r7 =   0 
-#  PC =   0
-#  INSTR = 100000110
-# 
-#  r0 =   0 
-#  r1 =   6 
-#  r2 =   0 
-#  r3 =   0 
+# input = 1   10100   1000001111
+# input = -1.5146484375 * 2**  5
+# exp_output = -        48  -00000000000000000000000000110000
+# output = -    X -xxxxxxx11111111
+#     X         48
+# scores =     0     0
 #  
-# 
-# r4 =   0 
-#  r5 =   0 
-#  r6 =   0 
-#  r7 =   0 
-#  PC =   1
-#  INSTR = 001001001
-# 
-#  r0 =   0 
-#  r1 =  12 
-#  r2 =   0 
-#  r3 =   0 
+# input = 0   01101   0100100100
+# input = 1.2851562500 * 2** -2
+# exp_output =          0  00000000000000000000000000000000
+# output =     X   xxxxxxx11111111
+#     X          0
+# scores =     0     0
 #  
-# 
-# r4 =   0 
-#  r5 =   0 
-#  r6 =   0 
-#  r7 =   0 
-#  PC =   2
-#  INSTR = 001101001
-# 
-#  r0 =   0 
-#  r1 =  12 
-#  r2 =   0 
-#  r3 =   0 
+# input = 0   10111   1010000001
+# input = 1.6259765625 * 2**  8
+# exp_output =        416  00000000000000000000000110100000
+# output =     X   xxxxxxx11111111
+#     X        416
+# scores =     1     0
 #  
-# 
-# r4 =   0 
-#  r5 =  12 
-#  r6 =   0 
-#  r7 =   0 
-#  PC =   3
-#  INSTR = 011010111
-# 
-#  r0 =   0 
-#  r1 =  12 
-#  r2 =   0 
-#  r3 =   0 
+# input = 1   10101   1000001001
+# input = -1.5087890625 * 2**  6
+# exp_output = -        97  -00000000000000000000000001100001
+# output = -    X -xxxxxxx11111111
+#     X         97
+# scores =     1     0
 #  
-# 
-# r4 =   0 
-#  r5 = 192 
-#  r6 =   0 
-#  r7 =   0 
-#  PC =   4
-#  INSTR = 100000111
-# 
-#  r0 =   0 
-#  r1 =   7 
-#  r2 =   0 
-#  r3 =   0 
+# input = 0   10101   1001100011
+# input = 1.5966796875 * 2**  6
+# exp_output =        102  00000000000000000000000001100110
+# output =     X   xxxxxxx11111111
+#     X        102
+# scores =     1     0
 #  
-# 
-# r4 =   0 
-#  r5 = 192 
-#  r6 =   0 
-#  r7 =   0 
-#  PC =   5
-#  INSTR = 111101001
-# 
-#  r0 =   0 
-#  r1 =   7 
-#  r2 =   0 
-#  r3 =   0 
+# input = 0   11110   1100001101
+# input = 1.7626953125 * 2** 15
+# exp_output = 32767 -- pos. overflow
+# output =     X   xxxxxxx11111111
+#     X      57760
+# scores =     2     0
 #  
-# 
-# r4 =   0 
-#  r5 = 192 
-#  r6 =   0 
-#  r7 =   0 
-#  PC =   7
-#  INSTR = 100001010
-# 
-#  r0 =   0 
-#  r1 =  10 
-#  r2 =   0 
-#  r3 =   0 
+# input = 1   00110   0110001101
+# input = -1.3876953125 * 2** -9
+# exp_output = -         0  -00000000000000000000000000000000
+# output = -    X -xxxxxxx11111111
+#     X          0
+# scores =     2     0
 #  
-# 
-# r4 =   0 
-#  r5 = 192 
-#  r6 =   0 
-#  r7 =   0 
-#  PC =   8
-#  INSTR = 110001101
-# 
-#  r0 =   0 
-#  r1 =  10 
-#  r2 =   0 
-#  r3 =   0 
+# input = 1   00001   0001100101
+# input = -1.0986328125 * 2**-14
+# exp_output = -         0  -00000000000000000000000000000000
+# output = -    X -xxxxxxx11111111
+#     X          0
+# scores =     2     0
 #  
-# 
-# r4 =   0 
-#  r5 = 192 
-#  r6 =   0 
-#  r7 =   0 
-#  PC =   9
-#  INSTR = 001001001
-# 
-#  r0 =   0 
-#  r1 =  20 
-#  r2 =   0 
-#  r3 =   0 
+# input = 0   10100   1000010010
+# input = 1.5175781250 * 2**  5
+# exp_output =         49  00000000000000000000000000110001
+# output =     X   xxxxxxx11111111
+#     X         49
+# scores =     2     0
 #  
-# 
-# r4 =   0 
-#  r5 = 192 
-#  r6 =   0 
-#  r7 =   0 
-#  PC =  10
-#  INSTR = 101001101
-# 
-#  r0 =   0 
-#  r1 =  10 
-#  r2 =   0 
-#  r3 =   0 
+# input = 1   11000   1100000001
+# input = -1.7509765625 * 2**  9
+# exp_output = -       897  -00000000000000000000001110000001
+# output = -    X -xxxxxxx11111111
+#     X        897
+# scores =     3     0
 #  
+# input = 1   10011   0100001101
+# input = -1.2626953125 * 2**  4
+# exp_output = -        20  -00000000000000000000000000010100
+# output = -    X -xxxxxxx11111111
+#     X         20
+# scores =     3     0
+#  
+# input = 1   11100   0101110110
+# input = -1.3652343750 * 2** 13
+# exp_output = -     11184  -00000000000000000010101110110000
+# output = -    X -xxxxxxx11111111
+#     X      11184
+# scores =     4     0
+#  
+# input = 1   10011   0100111101
+# input = -1.3095703125 * 2**  4
+# exp_output = -        21  -00000000000000000000000000010101
+# output = -    X -xxxxxxx11111111
+#     X         21
+# scores =     4     0
+#  
+# input = 0   10101   1111101101
+# input = 1.9814453125 * 2**  6
+# exp_output =        127  00000000000000000000000001111111
+# output =     X   xxxxxxx11111111
+#     X        127
+# scores =     4     0
+#  
+# input = 1   11101   1110001100
+# input = -1.8867187500 * 2** 14
+# exp_output = -     30912  -00000000000000000111100011000000
+# output = -    X -xxxxxxx11111111
+#     X      30912
+# scores =     5     0
+#  
+# input = 1   11010   0111111001
+# input = -1.4931640625 * 2** 11
+# exp_output = -      3058  -00000000000000000000101111110010
+# output = -    X -xxxxxxx11111111
+#     X       3058
+# scores =     6     0
+#  
+# input = 0   01001   0011000110
+# input = 1.1933593750 * 2** -6
+# exp_output =          0  00000000000000000000000000000000
+# output =     X   xxxxxxx11111111
+#     X          0
+# scores =     6     0
+#  
+# input = 1   00001   0011000101
+# input = -1.1923828125 * 2**-14
+# exp_output = -         0  -00000000000000000000000000000000
+# output = -    X -xxxxxxx11111111
+#     X          0
+# scores =     6     0
+#  
+# score1 =     6, score2 =     0, out of    20
+# ** Note: $stop    : C:/Users/Omar/Documents/CSE 141L project/flt2int_tb.sv(112)
+#    Time: 14005 ns  Iteration: 0  Instance: /flt2int_tb
+# Break in Task flt_int_conv at C:/Users/Omar/Documents/CSE 141L project/flt2int_tb.sv line 112
+add wave -position end  sim:/flt2int_tb/t1/rf1/core[0]
+add wave -position end  sim:/flt2int_tb/t1/rf1/core[1]
+add wave -position end  sim:/flt2int_tb/t1/rf1/core[2]
+add wave -position end  sim:/flt2int_tb/t1/rf1/core[3]
+add wave -position end  sim:/flt2int_tb/t1/rf1/core[4]
+add wave -position end  sim:/flt2int_tb/t1/rf1/core[5]
+add wave -position end  sim:/flt2int_tb/t1/rf1/core[6]
+add wave -position end  sim:/flt2int_tb/t1/rf1/core[7]
+add wave -position end  sim:/flt2int_tb/t1/pc1/PC
+add wave -position end  sim:/flt2int_tb/t1/au1/op_mnemonic
+restart -f
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+vlog -reportprogress 300 -work work {C:/Users/Omar/Documents/CSE 141L project/imem.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:00:13 on Dec 09,2018
+# vlog -reportprogress 300 -work work C:/Users/Omar/Documents/CSE 141L project/imem.sv 
+# -- Compiling module imem
 # 
-# r4 =   0 
-#  r5 = 192 
-#  r6 =   0 
-#  r7 =   0 
-#  PC =  11
-#  INSTR = 111111111
+# Top level modules:
+# 	imem
+# End time: 21:00:13 on Dec 09,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart -f
+# Loading work.imem
+run -all
+# no done flag!
+# ** Note: $stop    : C:/Users/Omar/Documents/CSE 141L project/flt2int_tb.sv(39)
+#    Time: 200 us  Iteration: 0  Instance: /flt2int_tb
+# Break in Module flt2int_tb at C:/Users/Omar/Documents/CSE 141L project/flt2int_tb.sv line 39
+run -all
+restart -f
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+vlog -reportprogress 300 -work work {C:/Users/Omar/Documents/CSE 141L project/imem.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:15:34 on Dec 09,2018
+# vlog -reportprogress 300 -work work C:/Users/Omar/Documents/CSE 141L project/imem.sv 
+# -- Compiling module imem
 # 
-# ** Note: $stop    : C:/Users/Omar/Documents/CSE 141L project/TopLevel_tb.sv(43)
-#    Time: 125 ns  Iteration: 0  Instance: /TopLevel_tb
-# Break in Module TopLevel_tb at C:/Users/Omar/Documents/CSE 141L project/TopLevel_tb.sv line 43
-# End time: 12:16:43 on Dec 03,2018, Elapsed time: 0:01:22
+# Top level modules:
+# 	imem
+# End time: 21:15:34 on Dec 09,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart -f
+# Loading work.imem
+run -continue
+# Break in Module imem at C:/Users/Omar/Documents/CSE 141L project/imem.sv line 31
+run -all
+# input = 1   10000   1000000100
+# input = -1.5039062500 * 2**  1
+# exp_output = -         3  -00000000000000000000000000000011
+# output = -    x -xxxxxxxxxxxxxxx
+#     x          3
+# scores =     1     0
+#  
+# Break in Module imem at C:/Users/Omar/Documents/CSE 141L project/imem.sv line 31
+run -all
+# input = 1   10010   1000010000
+# input = -1.5156250000 * 2**  3
+# exp_output = -        12  -00000000000000000000000000001100
+# output = -    x -xxxxxxxxxxxxxxx
+#     x         12
+# scores =     2     0
+#  
+# Break in Module imem at C:/Users/Omar/Documents/CSE 141L project/imem.sv line 31
+run -all
+# input = 1   10100   1000001111
+# input = -1.5146484375 * 2**  5
+# exp_output = -        48  -00000000000000000000000000110000
+# output = -    x -xxxxxxxxxxxxxxx
+#     x         48
+# scores =     3     0
+#  
+# Break in Module imem at C:/Users/Omar/Documents/CSE 141L project/imem.sv line 31
+run -all
+# input = 0   01101   0100100100
+# input = 1.2851562500 * 2** -2
+# exp_output =          0  00000000000000000000000000000000
+# output =     x   xxxxxxxxxxxxxxx
+#     x          0
+# scores =     4     0
+#  
+# Break in Module imem at C:/Users/Omar/Documents/CSE 141L project/imem.sv line 31
+run -all
+# input = 0   10111   1010000001
+# input = 1.6259765625 * 2**  8
+# exp_output =        416  00000000000000000000000110100000
+# output =     x   xxxxxxxxxxxxxxx
+#     x        416
+# scores =     5     0
+#  
+# Break in Module imem at C:/Users/Omar/Documents/CSE 141L project/imem.sv line 31
+run -all
+# input = 1   10101   1000001001
+# input = -1.5087890625 * 2**  6
+# exp_output = -        97  -00000000000000000000000001100001
+# output = -    x -xxxxxxxxxxxxxxx
+#     x         97
+# scores =     6     0
+#  
+# Break in Module imem at C:/Users/Omar/Documents/CSE 141L project/imem.sv line 31
+run -all
+# input = 0   10101   1001100011
+# input = 1.5966796875 * 2**  6
+# exp_output =        102  00000000000000000000000001100110
+# output =     x   xxxxxxxxxxxxxxx
+#     x        102
+# scores =     7     0
+#  
+# Break in Module imem at C:/Users/Omar/Documents/CSE 141L project/imem.sv line 31
+run -all
+# input = 0   11110   1100001101
+# input = 1.7626953125 * 2** 15
+# exp_output = 32767 -- pos. overflow
+# output = 32767   111111111111111
+# 32767      57760
+# scores =     8     1
+#  
+# Break in Module imem at C:/Users/Omar/Documents/CSE 141L project/imem.sv line 31
+run -all
+# input = 1   00110   0110001101
+# input = -1.3876953125 * 2** -9
+# exp_output = -         0  -00000000000000000000000000000000
+# output = -    0 -000000000000000
+#     0          0
+# scores =     9     2
+#  
+# Break in Module imem at C:/Users/Omar/Documents/CSE 141L project/imem.sv line 31
+run -all
+# input = 1   00001   0001100101
+# input = -1.0986328125 * 2**-14
+# exp_output = -         0  -00000000000000000000000000000000
+# output = -    0 -000000000000000
+#     0          0
+# scores =    10     3
+#  
+# Break in Module imem at C:/Users/Omar/Documents/CSE 141L project/imem.sv line 31
+run -all
+# input = 0   10100   1000010010
+# input = 1.5175781250 * 2**  5
+# exp_output =         49  00000000000000000000000000110001
+# output =     0   000000000000000
+#     0         49
+# scores =    11     3
+#  
+# Break in Module imem at C:/Users/Omar/Documents/CSE 141L project/imem.sv line 31
+run -all
+# input = 1   11000   1100000001
+# input = -1.7509765625 * 2**  9
+# exp_output = -       897  -00000000000000000000001110000001
+# output = -    0 -000000000000000
+#     0        897
+# scores =    12     3
+#  
+# Break in Module imem at C:/Users/Omar/Documents/CSE 141L project/imem.sv line 31
+run -all
+# input = 1   10011   0100001101
+# input = -1.2626953125 * 2**  4
+# exp_output = -        20  -00000000000000000000000000010100
+# output = -    0 -000000000000000
+#     0         20
+# scores =    13     3
+#  
+# Break in Module imem at C:/Users/Omar/Documents/CSE 141L project/imem.sv line 31
+run -all
+# input = 1   11100   0101110110
+# input = -1.3652343750 * 2** 13
+# exp_output = -     11184  -00000000000000000010101110110000
+# output = -    0 -000000000000000
+#     0      11184
+# scores =    14     3
+#  
+# Break in Module imem at C:/Users/Omar/Documents/CSE 141L project/imem.sv line 31
+run -all
+# input = 1   10011   0100111101
+# input = -1.3095703125 * 2**  4
+# exp_output = -        21  -00000000000000000000000000010101
+# output = -    0 -000000000000000
+#     0         21
+# scores =    15     3
+#  
+# Break in Module imem at C:/Users/Omar/Documents/CSE 141L project/imem.sv line 31
+run -all
+# input = 0   10101   1111101101
+# input = 1.9814453125 * 2**  6
+# exp_output =        127  00000000000000000000000001111111
+# output =     0   000000000000000
+#     0        127
+# scores =    16     3
+#  
+# Break in Module imem at C:/Users/Omar/Documents/CSE 141L project/imem.sv line 31
+run -all
+# input = 1   11101   1110001100
+# input = -1.8867187500 * 2** 14
+# exp_output = -     30912  -00000000000000000111100011000000
+# output = -    0 -000000000000000
+#     0      30912
+# scores =    17     3
+#  
+# Break in Module imem at C:/Users/Omar/Documents/CSE 141L project/imem.sv line 31
+run -all
+# input = 1   11010   0111111001
+# input = -1.4931640625 * 2** 11
+# exp_output = -      3058  -00000000000000000000101111110010
+# output = -    0 -000000000000000
+#     0       3058
+# scores =    18     3
+#  
+# Break in Module imem at C:/Users/Omar/Documents/CSE 141L project/imem.sv line 31
+run -all
+# input = 0   01001   0011000110
+# input = 1.1933593750 * 2** -6
+# exp_output =          0  00000000000000000000000000000000
+# output =     0   000000000000000
+#     0          0
+# scores =    19     4
+#  
+# Break in Module imem at C:/Users/Omar/Documents/CSE 141L project/imem.sv line 31
+run -all
+# input = 1   00001   0011000101
+# input = -1.1923828125 * 2**-14
+# exp_output = -         0  -00000000000000000000000000000000
+# output = -    0 -000000000000000
+#     0          0
+# scores =    20     5
+#  
+# score1 =    20, score2 =     5, out of    20
+# ** Note: $stop    : C:/Users/Omar/Documents/CSE 141L project/flt2int_tb.sv(112)
+#    Time: 28555 ns  Iteration: 0  Instance: /flt2int_tb
+# Break in Task flt_int_conv at C:/Users/Omar/Documents/CSE 141L project/flt2int_tb.sv line 112
+restart -f
+run -continue
+# Break in Module imem at C:/Users/Omar/Documents/CSE 141L project/imem.sv line 31
+run
+run
+run
+run
+run
+run
+run
+# End time: 22:43:44 on Dec 09,2018, Elapsed time: 1:52:28
 # Errors: 0, Warnings: 0
