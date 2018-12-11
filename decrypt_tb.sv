@@ -20,9 +20,9 @@ module Lab4_tb                  ;
 //  logic[15:0] i   = 0           ;		  // index counter -- increments on each clock cycle
 // our original American Standard Code for Information Interchange message follows
 // note in practice your design should be able to handle ANY ASCII string
-  string     str1  = "Mr. Watson, come here. I want to see you.";	// 1st program 1 input
-  string     str2  = "Knowledge comes, but wisdom lingers.     ";	// program 2 output
-  string     str4  = "  01234546789abcdefghijklmnopqrstuvwxyz. ";	// 2nd program 1 input
+//  string     str1  = "Mr. Watson, come here. I want to see you.";	// 1st program 1 input
+  string     str4  = "Knowledge comes, but wisdom lingers.     ";	// program 2 output
+//  string     str4  = "  01234546789abcdefghijklmnopqrstuvwxyz. ";	// 2nd program 1 input
 //  string     str4  = "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@";//          A joke is a very serious thing.";	// program 3 output
 
 // displayed encrypted string will go here:
@@ -46,9 +46,10 @@ module Lab4_tb                  ;
 
   int lk;								  // counts leading spaces for program 3
   top dut(
-	.clk(clk),
-	.reset(init),
-	.done(done))          ;          // your top level design goes here 
+    .clk     (clk),	   // use your own port names, if different
+    .reset    (init),   // some prefer to call this ".reset"
+    .done    (done)
+  );          // your top level design goes here 
 
   initial begin
     for(lk = 0; lk<55; lk++)
@@ -58,9 +59,19 @@ module Lab4_tb                  ;
     clk         = 0            ; 		 // initialize clock
     init        = 1            ;		 // activate reset
 
+// put LFSR patterns into memory
+  dut.data_mem1.my_memory[55] = LFSR_ptrn[0];
+  dut.data_mem1.my_memory[56] = LFSR_ptrn[1];
+  dut.data_mem1.my_memory[57] = LFSR_ptrn[2];
+  dut.data_mem1.my_memory[58] = LFSR_ptrn[3];
+  dut.data_mem1.my_memory[59] = LFSR_ptrn[4];
+  dut.data_mem1.my_memory[60] = LFSR_ptrn[5];
+  dut.data_mem1.my_memory[61] = LFSR_ptrn[6];
+  dut.data_mem1.my_memory[62] = LFSR_ptrn[7];
+
 // program 2 -- precompute encrypted message
-	lfsr_ptrn[3] = LFSR_ptrn[7] ;         // select one of 8 permitted
-	lfsr4[0]     = LFSR_init[3];         // any nonzero value (zero may be helpful for debug)
+	lfsr_ptrn[3] = LFSR_ptrn[0] ;         // select one of 8 permitted
+	lfsr4[0]     = $random | 8'h08; // LFSR_init[3];         // any nonzero value (zero may be helpful for debug)
     $display("run program 2");
     $display("%s",str4)        ;         // print original message in transcript window
 	$display("lead space count for program 2 = %d",lk);
@@ -88,14 +99,14 @@ module Lab4_tb                  ;
 // run program 2
     init        = 1            ;		 // activate reset
     for(int n=0; n<64; n++)
-	  dut.dm1.core[n+64] = msg_crypto4[n];
+	  dut.data_mem1.my_memory[n+64] = msg_crypto4[n];
     #20ns init = 0             ;
     #60ns; 	                             // wait for 6 clock cycles of nominal 10ns each
     wait(done);                          // wait for DUT's done flag to go high
     #10ns $display();
     $display("program 2:"); 
     for(int n=0; n<55; n++)
-      $display("%d bench msg: %h dut msg: %h",n, str4[n+lk], dut.dm1.core[n]);   
+      $display("%d bench msg: %h dut msg: %h",n, str4[n+lk], dut.data_mem1.my_memory[n]);   
     #20ns $stop;
   end
 
