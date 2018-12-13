@@ -68,7 +68,7 @@ regime2:
 	lsl r6, 2
 	ldi 0b10
 	add r6, r1
-	and r6, r2 
+	add r6, r2 
 	ldi 0b1100
 	and r6, r1 
 	add r7, r1
@@ -89,7 +89,7 @@ loop:
 	lsl	 r1, 2	;r1 = 0b10000000
 	add r6, r1	;r6 = 0b10000000
 	add r7, r1	;r7 = 0b10000000
-	and r6, r2	;r6 = 0b10000000 & LSW		
+	and r6, r4	;r6 = 0b10000000 & LSW		
 	ldr r0, shiftLSW ;ASSUMED r5 IS GARGABE VALUE
 	
 	
@@ -116,8 +116,9 @@ shiftLSW:
 	add r1, r7
 	bne r2, r6	
 regime3:
-	lsr r6, 4	;clear r6
-	lsr r7, 4	;clear r7
+	ldi 0
+	and r6, r1	;clear r6
+	and r7, r1	;clear r7
 	ldi 25
 	add r6, r1
 	ldr r0, regime4
@@ -255,7 +256,7 @@ round:
 	ldi 1
 	add r3, r1
 done:
-	ldi 0
+	ldi 0		;done
 	and r7, r1
 	ldi 3
 	ldm r6, r1 ; r6 = sign bit
